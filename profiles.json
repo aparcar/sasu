@@ -1,0 +1,2942 @@
+{
+	"nucom_r5010un-v2": {
+		"target": "brcm63xx/smp"
+	},
+	"sky_sr102": {
+		"target": "brcm63xx/smp"
+	},
+	"ubnt_routerstation-pro": {
+		"target": "ath79/generic"
+	},
+	"zyxel_nsa325": {
+		"target": "kirkwood/"
+	},
+	"zyxel_wre6606": {
+		"target": "ipq40xx/generic"
+	},
+	"linksys-wrt160n-v3": {
+		"target": "brcm47xx/mips74k"
+	},
+	"ti_omap3-beagle": {
+		"target": "omap/"
+	},
+	"lantiq_easy98035synce": {
+		"target": "lantiq/falcon"
+	},
+	"linksys-e1500-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"netgear_r6350": {
+		"target": "ramips/mt7621"
+	},
+	"ls1021atwr": {
+		"target": "layerscape/armv7"
+	},
+	"dlink_dir-620-d1": {
+		"target": "ramips/rt305x"
+	},
+	"brcm_bcm96368mvngr": {
+		"target": "brcm63xx/generic"
+	},
+	"yuncore_xd4200": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wr1043nd-v4": {
+		"target": "ath79/generic"
+	},
+	"alcatel_rg100a": {
+		"target": "brcm63xx/generic"
+	},
+	"netgear_wnr2200-16m": {
+		"target": "ath79/generic"
+	},
+	"zbtlink_zbt-we3526": {
+		"target": "ramips/mt7621"
+	},
+	"comtrend_ar-5315u": {
+		"target": "brcm63xx/smp"
+	},
+	"linksys-e2500-v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"nec_wg800hp": {
+		"target": "ath79/generic"
+	},
+	"alfa-network_w502u": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_tl-wr840n-v4": {
+		"target": "ramips/mt76x8"
+	},
+	"tplink_tl-mr3420-v5": {
+		"target": "ramips/mt76x8"
+	},
+	"linksys-wrt54gs-v4": {
+		"target": "brcm47xx/legacy"
+	},
+	"mofinetwork_mofi3500-3gn": {
+		"target": "ramips/rt305x"
+	},
+	"sfr_neufbox-6-sercomm-r0": {
+		"target": "brcm63xx/generic"
+	},
+	"wiznet_wizfi630a": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_tl-wr743nd-v1": {
+		"target": "ath79/tiny"
+	},
+	"zbtlink_zbt-wr8305rt": {
+		"target": "ramips/mt7620"
+	},
+	"dlink_dwr-922-e2": {
+		"target": "ramips/mt7620"
+	},
+	"lemaker_bananapro": {
+		"target": "sunxi/cortexa7"
+	},
+	"buffalo_wzr-hp-ag300h": {
+		"target": "ath79/generic"
+	},
+	"glinet_gl-x750": {
+		"target": "ath79/generic"
+	},
+	"arcadyan_vg3503j": {
+		"target": "lantiq/xrx200"
+	},
+	"tplink_archer-c20-v1": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_archer-c50-v3": {
+		"target": "ramips/mt76x8"
+	},
+	"pirelli_agpf-s0": {
+		"target": "brcm63xx/generic"
+	},
+	"omnima_miniembwifi": {
+		"target": "ramips/rt305x"
+	},
+	"wiznet_wizfi630s": {
+		"target": "ramips/mt76x8"
+	},
+	"meraki_mr24": {
+		"target": "apm821xx/nand"
+	},
+	"asus-wl-hdd25": {
+		"target": "brcm47xx/legacy"
+	},
+	"cudy_wr1000": {
+		"target": "ramips/mt76x8"
+	},
+	"poray_m4-8m": {
+		"target": "ramips/rt305x"
+	},
+	"zbtlink_zbt-we826-32m": {
+		"target": "ramips/mt7620"
+	},
+	"aerohive_hiveap-330": {
+		"target": "mpc85xx/p1020"
+	},
+	"linksys_wrt32x": {
+		"target": "mvebu/cortexa9"
+	},
+	"planex_vr500": {
+		"target": "ramips/mt7621"
+	},
+	"asus_rt-n56u": {
+		"target": "ramips/rt3883"
+	},
+	"huawei_echolife-hg553": {
+		"target": "brcm63xx/smp"
+	},
+	"brcm_bcm963281tan": {
+		"target": "brcm63xx/generic"
+	},
+	"wd_mybooklive": {
+		"target": "apm821xx/sata"
+	},
+	"alfa-network_r36m-e4g": {
+		"target": "ramips/mt7620"
+	},
+	"linksys-e1000": {
+		"target": "brcm47xx/mips74k"
+	},
+	"zyxel_keenetic-extra-ii": {
+		"target": "ramips/mt76x8"
+	},
+	"zyxel_p-2601hn": {
+		"target": "lantiq/xway"
+	},
+	"edimax_ew-7478apc": {
+		"target": "ramips/mt7620"
+	},
+	"arcadyan_arv7518pw": {
+		"target": "lantiq/xway"
+	},
+	"zyxel_keenetic-omni-ii": {
+		"target": "ramips/mt7620"
+	},
+	"avm_fritzbox-7530": {
+		"target": "ipq40xx/generic"
+	},
+	"at91sam9m10g45ek": {
+		"target": "at91/sam9x"
+	},
+	"pcs_cr5000": {
+		"target": "ath79/generic"
+	},
+	"airlink101_ar725w": {
+		"target": "ramips/rt288x"
+	},
+	"intenso_memory2move": {
+		"target": "ramips/rt305x"
+	},
+	"phicomm_k2t": {
+		"target": "ath79/generic"
+	},
+	"ocedo_ursus": {
+		"target": "ath79/generic"
+	},
+	"brcm_bcm96348gw": {
+		"target": "brcm63xx/generic"
+	},
+	"hame_mpr-a2": {
+		"target": "ramips/rt305x"
+	},
+	"ralink_mt7620a-mt7610e-evb": {
+		"target": "ramips/mt7620"
+	},
+	"avm_fritz7360sl": {
+		"target": "lantiq/xrx200"
+	},
+	"d-team_newifi-d2": {
+		"target": "ramips/mt7621"
+	},
+	"dlink_dir-825-b1": {
+		"target": "ath79/generic"
+	},
+	"luxul-abr-4500": {
+		"target": "bcm53xx/generic"
+	},
+	"usb_a9263": {
+		"target": "at91/sam9x"
+	},
+	"iodata_wn-ac733gr3": {
+		"target": "ramips/mt7620"
+	},
+	"mikrotik_rb750gr3": {
+		"target": "ramips/mt7621"
+	},
+	"hnet_c108": {
+		"target": "ramips/mt7620"
+	},
+	"methode_udpu": {
+		"target": "mvebu/cortexa53"
+	},
+	"tplink_archer-c58-v1": {
+		"target": "ath79/generic"
+	},
+	"arcadyan_vgv7510kw22-nor": {
+		"target": "lantiq/xrx200"
+	},
+	"sparklan_wcr-150gn": {
+		"target": "ramips/rt305x"
+	},
+	"itian_sq201": {
+		"target": "gemini/"
+	},
+	"marvell_armada7040-db": {
+		"target": "mvebu/cortexa72"
+	},
+	"wrtnode_wrtnode": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_d7800": {
+		"target": "ipq806x/generic"
+	},
+	"zbtlink_zbt-we1326": {
+		"target": "ramips/mt7621"
+	},
+	"asus_rt-n10-plus": {
+		"target": "ramips/rt305x"
+	},
+	"at91-sama5d2_ptc_ek": {
+		"target": "at91/sama5"
+	},
+	"sagem_fast-2704-v2": {
+		"target": "brcm63xx/smp"
+	},
+	"lenovo_newifi-y1s": {
+		"target": "ramips/mt7620"
+	},
+	"meraki_mx60": {
+		"target": "apm821xx/nand"
+	},
+	"linksys-e900-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"avm_fritz3370-rev2-micron": {
+		"target": "lantiq/xrx200"
+	},
+	"asus-rt-n12-c1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"adb_av4202n": {
+		"target": "brcm63xx/generic"
+	},
+	"linksys-e2500-v2.1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"ubnt_nanobeam-ac": {
+		"target": "ath79/generic"
+	},
+	"freescale_p2020rdb": {
+		"target": "mpc85xx/p2020"
+	},
+	"tplink_vr2600v": {
+		"target": "ipq806x/generic"
+	},
+	"brcm_bcm96328avng": {
+		"target": "brcm63xx/smp"
+	},
+	"avm_fritz7320": {
+		"target": "lantiq/xway"
+	},
+	"compulab_trimslice": {
+		"target": "tegra/"
+	},
+	"7links_px-4885-8m": {
+		"target": "ramips/rt305x"
+	},
+	"linksys-wrt300n-v1.1": {
+		"target": "brcm47xx/generic"
+	},
+	"lantiq_easy50712": {
+		"target": "lantiq/xway"
+	},
+	"cubietech_cubieboard2": {
+		"target": "sunxi/cortexa7"
+	},
+	"openmesh_om5p-ac-v2": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wdr4300-v1": {
+		"target": "ath79/generic"
+	},
+	"tplink_archer-c20-v5": {
+		"target": "ramips/mt76x8"
+	},
+	"adtran_bsap1800-v2": {
+		"target": "ath79/generic"
+	},
+	"netgear-wnr3500-v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"ubiquiti_edgerouterx": {
+		"target": "ramips/mt7621"
+	},
+	"asus-rt-n10u-b": {
+		"target": "brcm47xx/mips74k"
+	},
+	"zyxel_nbg6617": {
+		"target": "ipq40xx/generic"
+	},
+	"compex_wpj428": {
+		"target": "ipq40xx/generic"
+	},
+	"xunlong_orangepi-r1": {
+		"target": "sunxi/cortexa7"
+	},
+	"zyxel_p-2812hnu-f1": {
+		"target": "lantiq/xrx200"
+	},
+	"olimex_a13-olinuxino": {
+		"target": "sunxi/cortexa8"
+	},
+	"audiocodes_mp-252": {
+		"target": "lantiq/xway"
+	},
+	"sanlinking_d240": {
+		"target": "ramips/mt7620"
+	},
+	"ubnt_edgerouter-lite": {
+		"target": "octeon/"
+	},
+	"glinet_gl-ar750s-nor-nand": {
+		"target": "ath79/nand"
+	},
+	"huawei_echolife-hg556a-b": {
+		"target": "brcm63xx/generic"
+	},
+	"zbtlink_zbt-we1026-5g-16m": {
+		"target": "ramips/mt7620"
+	},
+	"teltonika_rut5xx": {
+		"target": "ramips/rt305x"
+	},
+	"7links_px-4885-4m": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_archer-c6-v2-us": {
+		"target": "ath79/generic"
+	},
+	"apalis": {
+		"target": "imx6/"
+	},
+	"tplink_tl-wr902ac-v3": {
+		"target": "ramips/mt76x8"
+	},
+	"tplink_tl-wr842n-v3": {
+		"target": "ath79/generic"
+	},
+	"comfast_cf-e314n-v2": {
+		"target": "ath79/generic"
+	},
+	"zte_q7": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_ex6130": {
+		"target": "ramips/mt7620"
+	},
+	"ls2088ardb": {
+		"target": "layerscape/armv8_64b"
+	},
+	"zyxel_nbg6716": {
+		"target": "ath79/nand"
+	},
+	"netgear-wgr614-v8": {
+		"target": "brcm47xx/legacy"
+	},
+	"netgear_wndr3700": {
+		"target": "ath79/generic"
+	},
+	"planex_mzk-w300nh2": {
+		"target": "ramips/rt305x"
+	},
+	"zte_h201l": {
+		"target": "lantiq/xway"
+	},
+	"ubnt_edgeswitch-8xp": {
+		"target": "ath79/generic"
+	},
+	"sitecom_wl-351": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_tl-wr740n-v3": {
+		"target": "ath79/tiny"
+	},
+	"comtrend_ct-6373": {
+		"target": "brcm63xx/smp"
+	},
+	"ubnt_bullet-m-xw": {
+		"target": "ath79/generic"
+	},
+	"netgear_wnr2200-8m": {
+		"target": "ath79/generic"
+	},
+	"iodata_wn-ac1167dgr": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wr810n-v1": {
+		"target": "ath79/generic"
+	},
+	"huawei_echolife-hg556a-c": {
+		"target": "brcm63xx/generic"
+	},
+	"usb_a9g20": {
+		"target": "at91/sam9x"
+	},
+	"pine64_sopine-baseboard": {
+		"target": "sunxi/cortexa53"
+	},
+	"tplink_tl-wdr3500-v1": {
+		"target": "ath79/generic"
+	},
+	"linksys-wrt54g3gv2-vf": {
+		"target": "brcm47xx/legacy"
+	},
+	"buffalo_wbmr-hp-g300h-a": {
+		"target": "lantiq/xway"
+	},
+	"skyline_sl-r7205": {
+		"target": "ramips/rt305x"
+	},
+	"netgear_wn3000rp-v3": {
+		"target": "ramips/mt7620"
+	},
+	"nexaira_bc2": {
+		"target": "ramips/rt305x"
+	},
+	"phicomm_k2p": {
+		"target": "ramips/mt7621"
+	},
+	"bdcom_wap2100-sk": {
+		"target": "ramips/mt7620"
+	},
+	"asus-rt-n12hp": {
+		"target": "brcm47xx/mips74k"
+	},
+	"brcm_bcm96338w": {
+		"target": "brcm63xx/smp"
+	},
+	"tplink_re200-v2": {
+		"target": "ramips/mt76x8"
+	},
+	"zbtlink_zbt-we826-e": {
+		"target": "ramips/mt7620"
+	},
+	"seagate_goflexhome": {
+		"target": "kirkwood/"
+	},
+	"pirelli_a226g": {
+		"target": "brcm63xx/generic"
+	},
+	"lantiq_easy98000-nor": {
+		"target": "lantiq/falcon"
+	},
+	"avm_fritz7412": {
+		"target": "lantiq/xrx200"
+	},
+	"linksys-wrt54gs": {
+		"target": "brcm47xx/legacy"
+	},
+	"avm_fritzrepeater-3000": {
+		"target": "ipq40xx/generic"
+	},
+	"dlink_dap-1522-a1": {
+		"target": "ramips/rt288x"
+	},
+	"glinet_6408": {
+		"target": "ath79/generic"
+	},
+	"ls1043ardb": {
+		"target": "layerscape/armv8_64b"
+	},
+	"d-link_dsl-274xb-c3": {
+		"target": "brcm63xx/smp"
+	},
+	"tplink_tl-wa850re-v1": {
+		"target": "ath79/tiny"
+	},
+	"argus_atp-52b": {
+		"target": "ramips/rt305x"
+	},
+	"arcadyan_arv7519rw22": {
+		"target": "lantiq/xrx200"
+	},
+	"arcadyan_vgv7519-brn": {
+		"target": "lantiq/xrx200"
+	},
+	"tplink_re350-v1": {
+		"target": "ramips/mt7621"
+	},
+	"netgear-wndr3400-v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"jjplus_ja76pf2": {
+		"target": "ath79/generic"
+	},
+	"marvell_macchiatobin": {
+		"target": "mvebu/cortexa72"
+	},
+	"comfast_cf-wr650ac-v2": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wr941n-v7-cn": {
+		"target": "ath79/tiny"
+	},
+	"zyxel_nbg-419n-v2": {
+		"target": "ramips/rt305x"
+	},
+	"zyxel_keenetic-omni": {
+		"target": "ramips/mt7620"
+	},
+	"asus-rt-n14uhp": {
+		"target": "brcm47xx/mips74k"
+	},
+	"lantiq_easy98035synce1588": {
+		"target": "lantiq/falcon"
+	},
+	"comfast_cf-wr650ac-v1": {
+		"target": "ath79/generic"
+	},
+	"d-link_dsl-2650u": {
+		"target": "brcm63xx/generic"
+	},
+	"elecom_wrc-1750ghbk2-i": {
+		"target": "ath79/generic"
+	},
+	"brcm_bcm96368mvwg": {
+		"target": "brcm63xx/smp"
+	},
+	"xiaomi_miwifi-nano": {
+		"target": "ramips/mt76x8"
+	},
+	"huawei_echolife-hg622": {
+		"target": "brcm63xx/generic"
+	},
+	"arcadyan_arv7506pw11": {
+		"target": "lantiq/xway"
+	},
+	"linksys_viper": {
+		"target": "kirkwood/"
+	},
+	"pcs_cap324": {
+		"target": "ath79/generic"
+	},
+	"dlink_dwr-921-c1": {
+		"target": "ramips/mt7620"
+	},
+	"asus-rt-n10p-v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"unielec_u4019-32m": {
+		"target": "ipq40xx/generic"
+	},
+	"glinet_gl-ar300m-nor": {
+		"target": "ath79/nand"
+	},
+	"netgear_dgn3500b": {
+		"target": "lantiq/xway"
+	},
+	"marvell_axp-gp": {
+		"target": "mvebu/cortexa9"
+	},
+	"huawei_echolife-hg655b": {
+		"target": "brcm63xx/generic"
+	},
+	"ls1012ardb": {
+		"target": "layerscape/armv8_64b"
+	},
+	"trendnet_tew-638apb-v2": {
+		"target": "ramips/rt305x"
+	},
+	"sfr_neufbox-4-foxconn-r1": {
+		"target": "brcm63xx/smp"
+	},
+	"linksys-wrt160n-v1": {
+		"target": "brcm47xx/legacy"
+	},
+	"marvell_armada-3720-db": {
+		"target": "mvebu/cortexa53"
+	},
+	"asus-rt-n12": {
+		"target": "brcm47xx/mips74k"
+	},
+	"youhua_wr1200js": {
+		"target": "ramips/mt7621"
+	},
+	"glinet_gl-mt300n": {
+		"target": "ramips/mt7620"
+	},
+	"rakwireless_rak633": {
+		"target": "ramips/mt76x8"
+	},
+	"zyxel_keenetic-viva": {
+		"target": "ramips/mt7620"
+	},
+	"mele_m9": {
+		"target": "sunxi/cortexa7"
+	},
+	"linksys-wrt54g": {
+		"target": "brcm47xx/legacy"
+	},
+	"hootoo_ht-tm02": {
+		"target": "ramips/rt305x"
+	},
+	"olimex_a20-olinuxino-lime2-emmc": {
+		"target": "sunxi/cortexa7"
+	},
+	"aerohive_hiveap-121": {
+		"target": "ath79/nand"
+	},
+	"tplink_archer-c7-v1": {
+		"target": "ath79/generic"
+	},
+	"tplink_c2600": {
+		"target": "ipq806x/generic"
+	},
+	"firefly_firewrt": {
+		"target": "ramips/mt7621"
+	},
+	"iodata_wn-ax1167gr2": {
+		"target": "ramips/mt7621"
+	},
+	"ocedo_raccoon": {
+		"target": "ath79/generic"
+	},
+	"iptime_a3": {
+		"target": "ramips/mt76x8"
+	},
+	"d-link_dva-g3810bn-tl": {
+		"target": "brcm63xx/smp"
+	},
+	"wavlink_wl-wn575a3": {
+		"target": "ramips/mt76x8"
+	},
+	"tenda_3g150b": {
+		"target": "ramips/rt305x"
+	},
+	"friendlyarm_nanopi-neo-plus2": {
+		"target": "sunxi/cortexa53"
+	},
+	"ubnt_nanostation-ac-loco": {
+		"target": "ath79/generic"
+	},
+	"comtrend_vr-3025u": {
+		"target": "brcm63xx/smp"
+	},
+	"asus-rt-n16": {
+		"target": "brcm47xx/mips74k"
+	},
+	"iptime_a604m": {
+		"target": "ramips/mt76x8"
+	},
+	"asus-rt-n15u": {
+		"target": "brcm47xx/mips74k"
+	},
+	"netgear_dgnd3800b": {
+		"target": "brcm63xx/smp"
+	},
+	"dlink-dwl-3150": {
+		"target": "brcm47xx/legacy"
+	},
+	"comtrend_ar-5387un": {
+		"target": "brcm63xx/smp"
+	},
+	"telco-electronics_x1": {
+		"target": "ramips/mt7621"
+	},
+	"planex_mzk-wdpr": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_archer-c50-v1": {
+		"target": "ramips/mt7620"
+	},
+	"edimax-ps1208-mfg": {
+		"target": "brcm47xx/legacy"
+	},
+	"xunlong_orangepi-pc-plus": {
+		"target": "sunxi/cortexa7"
+	},
+	"tplink_tl-wr740n-v4": {
+		"target": "ath79/tiny"
+	},
+	"tplink_archer-d50-v1": {
+		"target": "ath79/generic"
+	},
+	"alphanetworks_asl26555-16m": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_archer-c59-v2": {
+		"target": "ath79/generic"
+	},
+	"buffalo-wzr-900dhp": {
+		"target": "bcm53xx/generic"
+	},
+	"buffalo_whr-300hp2": {
+		"target": "ramips/mt7620"
+	},
+	"qxwlan_e2600ac-c1": {
+		"target": "ipq40xx/generic"
+	},
+	"d-link_dsl-275xb-d1": {
+		"target": "brcm63xx/generic"
+	},
+	"tplink-archer-c5-v2": {
+		"target": "bcm53xx/generic"
+	},
+	"sinovoip_bananapi-m2-plus": {
+		"target": "sunxi/cortexa7"
+	},
+	"netgear_wndr3700-v4": {
+		"target": "ath79/nand"
+	},
+	"netgear_dgn3500": {
+		"target": "lantiq/xway"
+	},
+	"tplink_tl-wr1043nd-v1": {
+		"target": "ath79/generic"
+	},
+	"pirelli_a226m-fwb": {
+		"target": "brcm63xx/smp"
+	},
+	"xunlong_orangepi-pc": {
+		"target": "sunxi/cortexa7"
+	},
+	"arcadyan_arv7519pw": {
+		"target": "lantiq/xway"
+	},
+	"linksprite_a10-pcduino": {
+		"target": "sunxi/cortexa8"
+	},
+	"asus-rt-ac68u": {
+		"target": "bcm53xx/generic"
+	},
+	"siemens_gigaset-sx76x": {
+		"target": "lantiq/xway"
+	},
+	"qcom_ipq8064-ap148": {
+		"target": "ipq806x/generic"
+	},
+	"asus_map-ac2200": {
+		"target": "ipq40xx/generic"
+	},
+	"planex_mzk-dp150n": {
+		"target": "ramips/rt305x"
+	},
+	"mediatek_mt7621-eval-board": {
+		"target": "ramips/mt7621"
+	},
+	"dlink_dir-859-a1": {
+		"target": "ath79/generic"
+	},
+	"xiaomi_mir4a-100m": {
+		"target": "ramips/mt76x8"
+	},
+	"buffalo_wzr-agl300nh": {
+		"target": "ramips/rt288x"
+	},
+	"ubnt_litebeam-ac-gen2": {
+		"target": "ath79/generic"
+	},
+	"ubnt_edgerouter": {
+		"target": "octeon/"
+	},
+	"adslr_g7": {
+		"target": "ramips/mt7621"
+	},
+	"dlink-dir-885l": {
+		"target": "bcm53xx/generic"
+	},
+	"planex_mzk-750dhp": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_wndap620": {
+		"target": "apm821xx/nand"
+	},
+	"tplink_archer-c50-v4": {
+		"target": "ramips/mt76x8"
+	},
+	"glinet_gl-mt750": {
+		"target": "ramips/mt7620"
+	},
+	"arcadyan_arv4510pw": {
+		"target": "lantiq/xway"
+	},
+	"zyxel_keenetic-start": {
+		"target": "ramips/rt305x"
+	},
+	"tenda_3g300m": {
+		"target": "ramips/rt305x"
+	},
+	"easyacc_wizard-8800": {
+		"target": "ramips/rt305x"
+	},
+	"netgear_ex3700": {
+		"target": "ramips/mt7620"
+	},
+	"totolink_lr1200": {
+		"target": "ramips/mt76x8"
+	},
+	"standard-noloader-nodictionarylzma": {
+		"target": "brcm47xx/mips74k"
+	},
+	"gnubee_gb-pc2": {
+		"target": "ramips/mt7621"
+	},
+	"sagem_fast-2504n": {
+		"target": "brcm63xx/smp"
+	},
+	"edimax_3g-6200n": {
+		"target": "ramips/rt305x"
+	},
+	"hiwifi_hc5761a": {
+		"target": "ramips/mt76x8"
+	},
+	"buffalo_wsr-600dhp": {
+		"target": "ramips/mt7621"
+	},
+	"mikrotik_rbm11g": {
+		"target": "ramips/mt7621"
+	},
+	"tplink_re350k-v1": {
+		"target": "ath79/generic"
+	},
+	"lantiq_easy88444": {
+		"target": "lantiq/falcon"
+	},
+	"unbranded_wr512-3gn-4m": {
+		"target": "ramips/rt305x"
+	},
+	"avm_fritzrepeater-1200": {
+		"target": "ipq40xx/generic"
+	},
+	"aruba_ap-303": {
+		"target": "ipq40xx/generic"
+	},
+	"glinet_gl-b1300": {
+		"target": "ipq40xx/generic"
+	},
+	"buffalo-wzr-600dhp2": {
+		"target": "bcm53xx/generic"
+	},
+	"dlink_dir-825-c1": {
+		"target": "ath79/generic"
+	},
+	"arcadyan_arv8539pw22": {
+		"target": "lantiq/xway"
+	},
+	"tplink_re650-v1": {
+		"target": "ramips/mt7621"
+	},
+	"qcom_ap-dk04.1-c1": {
+		"target": "ipq40xx/generic"
+	},
+	"linksys-e2500-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"sophos_red-15w-rev1": {
+		"target": "mpc85xx/generic"
+	},
+	"yukai_bocco": {
+		"target": "ramips/mt7620"
+	},
+	"ubnt_airrouter": {
+		"target": "ath79/generic"
+	},
+	"arcadyan_arv752dpw22": {
+		"target": "lantiq/xway"
+	},
+	"nexx_wt1520-4m": {
+		"target": "ramips/rt305x"
+	},
+	"zbtlink_zbt-wg3526-16m": {
+		"target": "ramips/mt7621"
+	},
+	"asus-wl-500gp-v1": {
+		"target": "brcm47xx/legacy"
+	},
+	"enterasys_ws-ap3710i": {
+		"target": "mpc85xx/p1020"
+	},
+	"xunlong_orangepi-one": {
+		"target": "sunxi/cortexa7"
+	},
+	"embeddedwireless_dorin": {
+		"target": "ath79/generic"
+	},
+	"storylink_sap-g3200u3": {
+		"target": "ramips/mt7621"
+	},
+	"xiaomi_mir3p": {
+		"target": "ramips/mt7621"
+	},
+	"tecom_gw6000": {
+		"target": "brcm63xx/generic"
+	},
+	"asiarf_ap7621-001": {
+		"target": "ramips/mt7621"
+	},
+	"tplink_re305-v1": {
+		"target": "ramips/mt76x8"
+	},
+	"tplink_tl-wr740n-v1": {
+		"target": "ath79/tiny"
+	},
+	"wavlink_wl-wn570ha1": {
+		"target": "ramips/mt76x8"
+	},
+	"dlink_dir-842-c1": {
+		"target": "ath79/generic"
+	},
+	"cubietech_a10-cubieboard": {
+		"target": "sunxi/cortexa8"
+	},
+	"asus-wl-500gp-v2": {
+		"target": "brcm47xx/legacy"
+	},
+	"asus-wl-500gd": {
+		"target": "brcm47xx/legacy"
+	},
+	"traverse-ls1043": {
+		"target": "layerscape/armv8_64b"
+	},
+	"ohyeah_oy-0001": {
+		"target": "ramips/mt7620"
+	},
+	"xunlong_orangepi-pc2": {
+		"target": "sunxi/cortexa53"
+	},
+	"buffalo_wbmr-hp-g300h-b": {
+		"target": "lantiq/xway"
+	},
+	"avm_fritz7312": {
+		"target": "lantiq/xway"
+	},
+	"hiwifi_hc5661": {
+		"target": "ramips/mt7620"
+	},
+	"marvell_armada8040-db": {
+		"target": "mvebu/cortexa72"
+	},
+	"tplink_cpe510-v2": {
+		"target": "ath79/generic"
+	},
+	"wrtnode_wrtnode2r": {
+		"target": "ramips/mt76x8"
+	},
+	"widora_neo-32m": {
+		"target": "ramips/mt76x8"
+	},
+	"tplink_archer-c7-v4": {
+		"target": "ath79/generic"
+	},
+	"olimex_a20-olinuxino-micro": {
+		"target": "sunxi/cortexa7"
+	},
+	"rosinson_wr818": {
+		"target": "ath79/generic"
+	},
+	"linksys-wrt310n-v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"alfa-network_awusfree1": {
+		"target": "ramips/mt76x8"
+	},
+	"tplink_tl-mr6400-v1": {
+		"target": "ath79/generic"
+	},
+	"ralink_v22rw-2x2": {
+		"target": "ramips/rt305x"
+	},
+	"nexx_wt3020-4m": {
+		"target": "ramips/mt7620"
+	},
+	"zyxel_nsa310b": {
+		"target": "kirkwood/"
+	},
+	"buffalo_wzr-hp-g302h-a1a0": {
+		"target": "ath79/generic"
+	},
+	"ubnt_nanostation-loco-m-xw": {
+		"target": "ath79/generic"
+	},
+	"netgear-wn3000rp": {
+		"target": "brcm47xx/mips74k"
+	},
+	"aximcom_mr-102n": {
+		"target": "ramips/rt305x"
+	},
+	"mediatek_mt7622-lynx-rfb1": {
+		"target": "mediatek/mt7622"
+	},
+	"tplink_tl-wr841-v12": {
+		"target": "ath79/tiny"
+	},
+	"tplink_vr200v": {
+		"target": "lantiq/xrx200"
+	},
+	"netgear-wnr1000-v3": {
+		"target": "brcm47xx/mips74k"
+	},
+	"prolink_pwh2004": {
+		"target": "ramips/rt305x"
+	},
+	"netgear_ex6100v2": {
+		"target": "ipq40xx/generic"
+	},
+	"wevo_11acnas": {
+		"target": "ramips/mt7621"
+	},
+	"buffalo_whr-600d": {
+		"target": "ramips/mt7620"
+	},
+	"alfa-network_quad-e4g": {
+		"target": "ramips/mt7621"
+	},
+	"accton_wr6202": {
+		"target": "ramips/rt305x"
+	},
+	"brcm_bcm96358vw2": {
+		"target": "brcm63xx/smp"
+	},
+	"meraki_mr33": {
+		"target": "ipq40xx/generic"
+	},
+	"asus_rp-n53": {
+		"target": "ramips/mt7620"
+	},
+	"at91-sama5d3_xplained": {
+		"target": "at91/sama5"
+	},
+	"huawei_echolife-hg556a-a": {
+		"target": "brcm63xx/smp"
+	},
+	"netgear_r6850": {
+		"target": "ramips/mt7621"
+	},
+	"alfa-network_ap121f": {
+		"target": "ath79/generic"
+	},
+	"mediatek_linkit-smart-7688": {
+		"target": "ramips/mt76x8"
+	},
+	"asus-wl-320gp": {
+		"target": "brcm47xx/legacy"
+	},
+	"linksys-e3000-v1": {
+		"target": "brcm47xx/generic"
+	},
+	"buffalo_wmr-300": {
+		"target": "ramips/mt7620"
+	},
+	"brcm_bcm96348r": {
+		"target": "brcm63xx/smp"
+	},
+	"dlink_dir-842-c3": {
+		"target": "ath79/generic"
+	},
+	"tplink_re355-v1": {
+		"target": "ath79/generic"
+	},
+	"comtrend_wap-5813n": {
+		"target": "brcm63xx/smp"
+	},
+	"zbtlink_zbt-we1026-h-32m": {
+		"target": "ramips/mt7620"
+	},
+	"at91sam9g15ek": {
+		"target": "at91/sam9x"
+	},
+	"netgear-wn2500rp-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"netgear-wgr614-v10-na": {
+		"target": "brcm47xx/mips74k"
+	},
+	"linksys_wrt3200acm": {
+		"target": "mvebu/cortexa9"
+	},
+	"olimex_a20-olinuxino-lime2": {
+		"target": "sunxi/cortexa7"
+	},
+	"tplink_re450-v1": {
+		"target": "ath79/generic"
+	},
+	"tenda_w150m": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_archer-a7-v5": {
+		"target": "ath79/generic"
+	},
+	"tplink_cpe610-v1": {
+		"target": "ath79/generic"
+	},
+	"adb_a4001n1": {
+		"target": "brcm63xx/smp"
+	},
+	"linksys-wrt610n-v2": {
+		"target": "brcm47xx/generic"
+	},
+	"iodata_wn-ag300dgr": {
+		"target": "ath79/generic"
+	},
+	"dlink_dir-620-a1": {
+		"target": "ramips/rt305x"
+	},
+	"vocore_vocore-8m": {
+		"target": "ramips/rt305x"
+	},
+	"standard-noloader-gz": {
+		"target": "brcm47xx/legacy"
+	},
+	"bt_homehub-v5a": {
+		"target": "lantiq/xrx200"
+	},
+	"aztech_hw550-3g": {
+		"target": "ramips/rt305x"
+	},
+	"comfast_cf-e560ac": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wr741nd-v4": {
+		"target": "ath79/tiny"
+	},
+	"unbranded_a5-v11": {
+		"target": "ramips/rt305x"
+	},
+	"asus_rt-g32-b1": {
+		"target": "ramips/rt305x"
+	},
+	"avm_fritz7362sl": {
+		"target": "lantiq/xrx200"
+	},
+	"tplink_cpe210-v2": {
+		"target": "ath79/generic"
+	},
+	"linksprite_pcduino3": {
+		"target": "sunxi/cortexa7"
+	},
+	"linksys_audi": {
+		"target": "kirkwood/"
+	},
+	"lava_lr-25g001": {
+		"target": "ramips/mt7620"
+	},
+	"ralink_v11st-fe": {
+		"target": "ramips/rt288x"
+	},
+	"hiwifi_hc5861": {
+		"target": "ramips/mt7620"
+	},
+	"linksys_re6500": {
+		"target": "ramips/mt7621"
+	},
+	"lmu5000": {
+		"target": "at91/sam9x"
+	},
+	"linksys-wrt320n-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"sercomm_na930": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_ex2700": {
+		"target": "ramips/mt7620"
+	},
+	"lantiq_easy80920-nor": {
+		"target": "lantiq/xrx200"
+	},
+	"mediatek_ap-mt7621a-v60": {
+		"target": "ramips/mt7621"
+	},
+	"trendnet_tew-823dru": {
+		"target": "ath79/generic"
+	},
+	"netgear_r7500v2": {
+		"target": "ipq806x/generic"
+	},
+	"xlnx_zynq-zc702": {
+		"target": "zynq/"
+	},
+	"asus-wl-500w": {
+		"target": "brcm47xx/legacy"
+	},
+	"seagate_dockstar": {
+		"target": "kirkwood/"
+	},
+	"tplink_archer-c20i": {
+		"target": "ramips/mt7620"
+	},
+	"qcom_ipq8064-ap161": {
+		"target": "ipq806x/generic"
+	},
+	"lemaker_bananapi": {
+		"target": "sunxi/cortexa7"
+	},
+	"arcwireless_freestation5": {
+		"target": "ramips/rt305x"
+	},
+	"asus_rt-n12p": {
+		"target": "ramips/mt7620"
+	},
+	"engenius_esr-9753": {
+		"target": "ramips/rt305x"
+	},
+	"zyxel_nbg-419n": {
+		"target": "ramips/rt305x"
+	},
+	"zyxel_p870hw-51a-v2": {
+		"target": "brcm63xx/smp"
+	},
+	"asus_wl-330n": {
+		"target": "ramips/rt305x"
+	},
+	"mediatek_mt7628an-eval-board": {
+		"target": "ramips/mt76x8"
+	},
+	"cznic_turris-omnia": {
+		"target": "mvebu/cortexa9"
+	},
+	"bt_homehub-v2b": {
+		"target": "lantiq/xway"
+	},
+	"nixcore_x1-8m": {
+		"target": "ramips/rt305x"
+	},
+	"iodata_etg3-r": {
+		"target": "ath79/generic"
+	},
+	"dlink_dwr-921-c3": {
+		"target": "ramips/mt7620"
+	},
+	"glinet_microuter-n300": {
+		"target": "ramips/mt76x8"
+	},
+	"comtrend_vr-3025un": {
+		"target": "brcm63xx/generic"
+	},
+	"dlink_dir-645": {
+		"target": "ramips/rt3883"
+	},
+	"ls1088ardb": {
+		"target": "layerscape/armv8_64b"
+	},
+	"asus_rt-ac58u": {
+		"target": "ipq40xx/generic"
+	},
+	"edimax_br-6478ac-v2": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_tl-wr741-v1": {
+		"target": "ath79/tiny"
+	},
+	"cloudengines_pogoplugv4": {
+		"target": "kirkwood/"
+	},
+	"comfast_cf-e313ac": {
+		"target": "ath79/generic"
+	},
+	"hilink_hlk-7628n": {
+		"target": "ramips/mt76x8"
+	},
+	"glinet_gl-mt300a": {
+		"target": "ramips/mt7620"
+	},
+	"marvell_axp-db": {
+		"target": "mvebu/cortexa9"
+	},
+	"asiarf_awm002-evb-4m": {
+		"target": "ramips/rt305x"
+	},
+	"nixcore_x1-16m": {
+		"target": "ramips/rt305x"
+	},
+	"at91sam9g20ek": {
+		"target": "at91/sam9x"
+	},
+	"shuttle_kd20": {
+		"target": "oxnas/ox820"
+	},
+	"vocore_vocore2-lite": {
+		"target": "ramips/mt76x8"
+	},
+	"linksys_wrt1200ac": {
+		"target": "mvebu/cortexa9"
+	},
+	"netgear_wndr4300": {
+		"target": "ath79/nand"
+	},
+	"iodata_wn-ac1167gr": {
+		"target": "ramips/mt7620"
+	},
+	"alfa-network_tube-e4g": {
+		"target": "ramips/mt7620"
+	},
+	"avm_fritz3370-rev2-hynix": {
+		"target": "lantiq/xrx200"
+	},
+	"glinet_gl-ar750s-nor": {
+		"target": "ath79/nand"
+	},
+	"phicomm_psg1218a": {
+		"target": "ramips/mt7620"
+	},
+	"ravpower_wd03": {
+		"target": "ramips/mt7620"
+	},
+	"zbtlink_zbt-we2026": {
+		"target": "ramips/mt7620"
+	},
+	"linksys-e2500-v3": {
+		"target": "brcm47xx/mips74k"
+	},
+	"netgear_wndr3800": {
+		"target": "ath79/generic"
+	},
+	"iodata_wn-gx300gr": {
+		"target": "ramips/mt7621"
+	},
+	"dlink_dir-610-a1": {
+		"target": "ramips/rt305x"
+	},
+	"buffalo-wxr-1900dhp": {
+		"target": "bcm53xx/generic"
+	},
+	"xzwifi_creativebox-v1": {
+		"target": "ramips/mt7621"
+	},
+	"cilab_meshpoint-one": {
+		"target": "ipq40xx/generic"
+	},
+	"comfast_cf-wr800n": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_tl-wr940n-v4": {
+		"target": "ath79/tiny"
+	},
+	"totolink_a7000r": {
+		"target": "ramips/mt7621"
+	},
+	"linksys_ea6350v3": {
+		"target": "ipq40xx/generic"
+	},
+	"tplink_wbs510-v2": {
+		"target": "ath79/generic"
+	},
+	"lantiq_easy88388": {
+		"target": "lantiq/falcon"
+	},
+	"tplink_tl-wr841-v9": {
+		"target": "ath79/tiny"
+	},
+	"aigale_ai-br100": {
+		"target": "ramips/mt7620"
+	},
+	"planex_mzk-ex750np": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_re200-v1": {
+		"target": "ramips/mt7620"
+	},
+	"netgear-wndr3400-v3": {
+		"target": "brcm47xx/mips74k"
+	},
+	"hauppauge_broadway": {
+		"target": "ramips/rt305x"
+	},
+	"buffalo_wsr-1166dhp": {
+		"target": "ramips/mt7621"
+	},
+	"ocedo_koala": {
+		"target": "ath79/generic"
+	},
+	"devolo_dvl1750x": {
+		"target": "ath79/generic"
+	},
+	"asus_wl-330n3g": {
+		"target": "ramips/rt305x"
+	},
+	"iodata_wn-ax1167gr": {
+		"target": "ramips/mt7621"
+	},
+	"unielec_u7628-01-16m": {
+		"target": "ramips/mt76x8"
+	},
+	"tplink_tl-wr841-v11": {
+		"target": "ath79/tiny"
+	},
+	"tplink_tl-wdr4300-v1-il": {
+		"target": "ath79/generic"
+	},
+	"linksys-e1200-v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"zbtlink_zbt-we826-16m": {
+		"target": "ramips/mt7620"
+	},
+	"olimex_rt5350f-olinuxino": {
+		"target": "ramips/rt305x"
+	},
+	"ubnt2": {
+		"target": "ath25/"
+	},
+	"netgear-r7900": {
+		"target": "bcm53xx/generic"
+	},
+	"pine64_pine64-plus": {
+		"target": "sunxi/cortexa53"
+	},
+	"elecom_wrc-300ghbk2-i": {
+		"target": "ath79/generic"
+	},
+	"engenius_esr600": {
+		"target": "ramips/mt7620"
+	},
+	"linksys-wrt54g3g": {
+		"target": "brcm47xx/legacy"
+	},
+	"tplink_vr200": {
+		"target": "lantiq/xrx200"
+	},
+	"kingston_mlwg2": {
+		"target": "ramips/mt7620"
+	},
+	"sagem_fast-2704n": {
+		"target": "brcm63xx/generic"
+	},
+	"qcom_ipq8064-ap148-legacy": {
+		"target": "ipq806x/generic"
+	},
+	"ubnt_bullet-m": {
+		"target": "ath79/generic"
+	},
+	"hame_mpr-a1": {
+		"target": "ramips/rt305x"
+	},
+	"hiwifi_hc5661a": {
+		"target": "ramips/mt76x8"
+	},
+	"ralink_mt7620a-evb": {
+		"target": "ramips/mt7620"
+	},
+	"asus-wl-550ge": {
+		"target": "brcm47xx/legacy"
+	},
+	"tplink_tl-wr940n-v3": {
+		"target": "ath79/tiny"
+	},
+	"fon_fonera-20n": {
+		"target": "ramips/rt305x"
+	},
+	"d-link_dsl-274xb-c2": {
+		"target": "brcm63xx/generic"
+	},
+	"dlink_dir-615-h1": {
+		"target": "ramips/rt305x"
+	},
+	"belkin_f5d8235-v2": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_tl-wr841-v5": {
+		"target": "ath79/tiny"
+	},
+	"engenius_ens620ext": {
+		"target": "ipq40xx/generic"
+	},
+	"vonets_var11n-300": {
+		"target": "ramips/mt7620"
+	},
+	"allnet_all5002": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_cpe210-v3": {
+		"target": "ath79/generic"
+	},
+	"tplink_archer-c2-v3": {
+		"target": "ath79/generic"
+	},
+	"skylab_skw92a": {
+		"target": "ramips/mt76x8"
+	},
+	"netgear_wnce2001": {
+		"target": "ramips/rt305x"
+	},
+	"asus-rt-n66u": {
+		"target": "brcm47xx/mips74k"
+	},
+	"comfast_cf-e120a-v3": {
+		"target": "ath79/generic"
+	},
+	"netgear-wnr2000v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"yuncore_a782": {
+		"target": "ath79/generic"
+	},
+	"akitio_mycloud": {
+		"target": "oxnas/ox820"
+	},
+	"ocedo_panda": {
+		"target": "mpc85xx/p1020"
+	},
+	"dlink_dch-m225": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_tl-wr1043nd-v2": {
+		"target": "ath79/generic"
+	},
+	"alphanetworks_asl56026": {
+		"target": "lantiq/xrx200"
+	},
+	"netgear-wndr3400-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"tplink_archer-c25-v1": {
+		"target": "ath79/generic"
+	},
+	"rpi": {
+		"target": "brcm2708/bcm2708"
+	},
+	"asus_rt-n13u": {
+		"target": "ramips/rt305x"
+	},
+	"raidsonic_ib-4220-b": {
+		"target": "gemini/"
+	},
+	"tplink_archer-c5-v1": {
+		"target": "ath79/generic"
+	},
+	"comtrend_ar-5381u": {
+		"target": "brcm63xx/generic"
+	},
+	"wb45n": {
+		"target": "at91/sam9x"
+	},
+	"mqmaker_witi": {
+		"target": "ramips/mt7621"
+	},
+	"devolo_dvl1750e": {
+		"target": "ath79/generic"
+	},
+	"head-weblink_hdrm200": {
+		"target": "ramips/mt7620"
+	},
+	"8dev_jalapeno": {
+		"target": "ipq40xx/generic"
+	},
+	"tplink_tl-wr841n-v14": {
+		"target": "ramips/mt76x8"
+	},
+	"asiarf_awapn2403": {
+		"target": "ramips/rt305x"
+	},
+	"ralink_mt7620a-mt7530-evb": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_archer-c60-v2": {
+		"target": "ath79/generic"
+	},
+	"ubnt_nanostation-m": {
+		"target": "ath79/generic"
+	},
+	"olimex_a10-olinuxino-lime": {
+		"target": "sunxi/cortexa8"
+	},
+	"aruba_ap-105": {
+		"target": "ath79/generic"
+	},
+	"arcadyan_vgv7519-nor": {
+		"target": "lantiq/xrx200"
+	},
+	"netgear_wnr612-v2": {
+		"target": "ath79/tiny"
+	},
+	"linksys_wrt1900acs": {
+		"target": "mvebu/cortexa9"
+	},
+	"ezviz_cs-w3-wd1200g-eup": {
+		"target": "ipq40xx/generic"
+	},
+	"edimax_ra21s": {
+		"target": "ramips/mt7621"
+	},
+	"allnet_all0333cj": {
+		"target": "lantiq/ase"
+	},
+	"buffalo_wbmr-300hpd": {
+		"target": "lantiq/xrx200"
+	},
+	"asus_rt-n15": {
+		"target": "ramips/rt288x"
+	},
+	"tplink_archer-c59-v1": {
+		"target": "ath79/generic"
+	},
+	"allnet_all5003": {
+		"target": "ramips/rt305x"
+	},
+	"allnet_all0256n-4m": {
+		"target": "ramips/rt305x"
+	},
+	"iodata_wn-ac1600dgr": {
+		"target": "ath79/generic"
+	},
+	"netgear-wndr3300-v1": {
+		"target": "brcm47xx/legacy"
+	},
+	"wevo_w2914ns-v2": {
+		"target": "ramips/mt7621"
+	},
+	"iodata_wnpr2600g": {
+		"target": "ramips/mt7621"
+	},
+	"compex_wpq864": {
+		"target": "ipq806x/generic"
+	},
+	"airlive_air3gii": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_tl-wr802n-v4": {
+		"target": "ramips/mt76x8"
+	},
+	"asus_rt-ac65p": {
+		"target": "ramips/mt7621"
+	},
+	"asus-rt-n12-d1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"comfast_cf-e110n-v2": {
+		"target": "ath79/generic"
+	},
+	"ubiquiti_edgerouterx-sfp": {
+		"target": "ramips/mt7621"
+	},
+	"omnima_hpm": {
+		"target": "ramips/rt3883"
+	},
+	"lantiq_easy98020-v18": {
+		"target": "lantiq/falcon"
+	},
+	"sitecom_wlr-7100": {
+		"target": "ath79/generic"
+	},
+	"buffalo_wcr-1166ds": {
+		"target": "ramips/mt76x8"
+	},
+	"pisen_wmb001n": {
+		"target": "ath79/generic"
+	},
+	"marvell_a370-rd": {
+		"target": "mvebu/cortexa9"
+	},
+	"friendlyarm_nanopi-neo2": {
+		"target": "sunxi/cortexa53"
+	},
+	"friendlyarm_nanopi-neo": {
+		"target": "sunxi/cortexa7"
+	},
+	"buffalo_wxr-2533dhp": {
+		"target": "ipq806x/generic"
+	},
+	"netgear_r7800": {
+		"target": "ipq806x/generic"
+	},
+	"netgear-r7000": {
+		"target": "bcm53xx/generic"
+	},
+	"pisen_ts-d084": {
+		"target": "ath79/generic"
+	},
+	"tenda_w306r-v2": {
+		"target": "ramips/rt305x"
+	},
+	"phicomm_psg1218b": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_ex6150": {
+		"target": "ramips/mt7621"
+	},
+	"pcs_cr3000": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wr710n-v1": {
+		"target": "ath79/generic"
+	},
+	"netgear_r6220": {
+		"target": "ramips/mt7621"
+	},
+	"comfast_cf-e5": {
+		"target": "ath79/generic"
+	},
+	"netgear_dgn1000b": {
+		"target": "lantiq/ase"
+	},
+	"trendnet_tew-714tru": {
+		"target": "ramips/rt305x"
+	},
+	"kingston_mlw221": {
+		"target": "ramips/mt7620"
+	},
+	"mitrastar_stg-212": {
+		"target": "oxnas/ox820"
+	},
+	"asus-rt-n66w": {
+		"target": "brcm47xx/mips74k"
+	},
+	"glinet_vixmini": {
+		"target": "ramips/mt76x8"
+	},
+	"poray_m3": {
+		"target": "ramips/rt305x"
+	},
+	"nexx_wt1520-8m": {
+		"target": "ramips/rt305x"
+	},
+	"fon_fon2601": {
+		"target": "ramips/mt7620"
+	},
+	"netgear-wndr3700-v3": {
+		"target": "brcm47xx/mips74k"
+	},
+	"netgear-r6300-v2": {
+		"target": "bcm53xx/generic"
+	},
+	"avnet_zynq-zed": {
+		"target": "zynq/"
+	},
+	"glinet_gl-mt300n-v2": {
+		"target": "ramips/mt76x8"
+	},
+	"dlink_dap-2610": {
+		"target": "ipq40xx/generic"
+	},
+	"iodata_wn-ac1600dgr2": {
+		"target": "ath79/generic"
+	},
+	"ubnt_unifiac-pro": {
+		"target": "ath79/generic"
+	},
+	"motorola-wa840g": {
+		"target": "brcm47xx/legacy"
+	},
+	"linksys_wrt1900acv2": {
+		"target": "mvebu/cortexa9"
+	},
+	"linksys-wrt300n-v1": {
+		"target": "brcm47xx/legacy"
+	},
+	"tplink_tl-wr810n-v2": {
+		"target": "ath79/generic"
+	},
+	"arcadyan_arv7510pw22": {
+		"target": "lantiq/xway"
+	},
+	"iodata_wn-dx1167r": {
+		"target": "ramips/mt7621"
+	},
+	"hiwifi_hc5761": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_wbs510-v1": {
+		"target": "ath79/generic"
+	},
+	"glinet_gl-ar300m-lite": {
+		"target": "ath79/generic"
+	},
+	"8devices_carambola": {
+		"target": "ramips/rt305x"
+	},
+	"actiontec_r1000h": {
+		"target": "brcm63xx/generic"
+	},
+	"dlink_dns-313": {
+		"target": "gemini/"
+	},
+	"dlink_dir-842-c2": {
+		"target": "ath79/generic"
+	},
+	"linksys-e1550-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"mtc_wr1201": {
+		"target": "ramips/mt7621"
+	},
+	"asus_rt-ac51u": {
+		"target": "ramips/mt7620"
+	},
+	"tecom_gw6200": {
+		"target": "brcm63xx/smp"
+	},
+	"netgear_wndr3700-v2": {
+		"target": "ath79/generic"
+	},
+	"mediatek_mt7629-lynx-rfb": {
+		"target": "mediatek/mt7629"
+	},
+	"cubox": {
+		"target": "imx6/"
+	},
+	"comtrend_vr-3026e": {
+		"target": "brcm63xx/smp"
+	},
+	"planex_mzk-ex300np": {
+		"target": "ramips/mt7620"
+	},
+	"adb_a4001n": {
+		"target": "brcm63xx/smp"
+	},
+	"linksys-wrt610n-v1": {
+		"target": "brcm47xx/generic"
+	},
+	"netgear_wndr3800ch": {
+		"target": "ath79/generic"
+	},
+	"asus-rt-ac53u": {
+		"target": "brcm47xx/mips74k"
+	},
+	"motorola-we800g": {
+		"target": "brcm47xx/legacy"
+	},
+	"lantiq_falcon-mdu": {
+		"target": "lantiq/falcon"
+	},
+	"rpi-4": {
+		"target": "brcm2708/bcm2711"
+	},
+	"upvel_ur-336un": {
+		"target": "ramips/rt305x"
+	},
+	"lantiq_easy98021": {
+		"target": "lantiq/falcon"
+	},
+	"xiaomi_mir3g": {
+		"target": "ramips/mt7621"
+	},
+	"tplink_tl-wr841n-v13": {
+		"target": "ramips/mt76x8"
+	},
+	"asus-rt-n53": {
+		"target": "brcm47xx/mips74k"
+	},
+	"at91-sama5d4_xplained": {
+		"target": "at91/sama5"
+	},
+	"telsey_cpva642": {
+		"target": "brcm63xx/smp"
+	},
+	"usb_a9260": {
+		"target": "at91/sam9x"
+	},
+	"elecom_wrc-2533gst": {
+		"target": "ramips/mt7621"
+	},
+	"asus-wl-520gu": {
+		"target": "brcm47xx/legacy"
+	},
+	"phicomm-k3": {
+		"target": "bcm53xx/generic"
+	},
+	"librerouter_librerouter-v1": {
+		"target": "ath79/generic"
+	},
+	"openmesh_a42": {
+		"target": "ipq40xx/generic"
+	},
+	"kimax_u25awf-h1": {
+		"target": "ramips/mt7620"
+	},
+	"vocore_vocore2": {
+		"target": "ramips/mt76x8"
+	},
+	"onion_omega2": {
+		"target": "ramips/mt76x8"
+	},
+	"loewe_wmdr-143n": {
+		"target": "ramips/rt3883"
+	},
+	"tplink_tl-wr1045nd-v2": {
+		"target": "ath79/generic"
+	},
+	"dlink_dir-600-b1": {
+		"target": "ramips/rt305x"
+	},
+	"netgear_dgnd3700-v1": {
+		"target": "brcm63xx/generic"
+	},
+	"buffalo_whr-g300n": {
+		"target": "ramips/rt305x"
+	},
+	"olimex_a20-olinuxino-lime": {
+		"target": "sunxi/cortexa7"
+	},
+	"tplink_wbs210-v2": {
+		"target": "ath79/generic"
+	},
+	"planex_db-wrt01": {
+		"target": "ramips/mt7620"
+	},
+	"ubnt_rocket-m": {
+		"target": "ath79/generic"
+	},
+	"engenius_emd1": {
+		"target": "ipq40xx/generic"
+	},
+	"openmesh_a62": {
+		"target": "ipq40xx/generic"
+	},
+	"buffalo_wzr-hp-g450h": {
+		"target": "ath79/generic"
+	},
+	"ubnt_lap-120": {
+		"target": "ath79/generic"
+	},
+	"on_n150r": {
+		"target": "ath79/tiny"
+	},
+	"iptime_a6ns-m": {
+		"target": "ramips/mt7621"
+	},
+	"8dev_carambola2": {
+		"target": "ath79/generic"
+	},
+	"marvell_a370-db": {
+		"target": "mvebu/cortexa9"
+	},
+	"tplink_tl-wa801nd-v5": {
+		"target": "ramips/mt76x8"
+	},
+	"tplink_archer-c2-v1": {
+		"target": "ramips/mt7620"
+	},
+	"allnet_all0256n-8m": {
+		"target": "ramips/rt305x"
+	},
+	"dlink_dir-505": {
+		"target": "ath79/generic"
+	},
+	"at91sam9x35ek": {
+		"target": "at91/sam9x"
+	},
+	"lenovo_newifi-d1": {
+		"target": "ramips/mt7621"
+	},
+	"ubnt_routerstation": {
+		"target": "ath79/generic"
+	},
+	"elecom_wrc-1900gst": {
+		"target": "ramips/mt7621"
+	},
+	"lantiq_easy98000-sflash": {
+		"target": "lantiq/falcon"
+	},
+	"olimex_rt5350f-olinuxino-evb": {
+		"target": "ramips/rt305x"
+	},
+	"linksys_wrt1900ac": {
+		"target": "mvebu/cortexa9"
+	},
+	"netgear_r7500": {
+		"target": "ipq806x/generic"
+	},
+	"pqi_air-pen": {
+		"target": "ath79/tiny"
+	},
+	"bt_home-hub-2-a": {
+		"target": "brcm63xx/smp"
+	},
+	"sfr_neufbox-4-sercomm-r0": {
+		"target": "brcm63xx/generic"
+	},
+	"tplink_tl-wr902ac-v1": {
+		"target": "ath79/generic"
+	},
+	"dlink_dir-810l": {
+		"target": "ramips/mt7620"
+	},
+	"etactica_eg200": {
+		"target": "ath79/generic"
+	},
+	"lantiq_easy80920-nand": {
+		"target": "lantiq/xrx200"
+	},
+	"nand": {
+		"target": "rb532/"
+	},
+	"olimex_a13-olimex-som": {
+		"target": "sunxi/cortexa8"
+	},
+	"jcg_jhr-ac876m": {
+		"target": "ramips/mt7621"
+	},
+	"asiarf_awm002-evb-8m": {
+		"target": "ramips/rt305x"
+	},
+	"tplink_tl-wr1043nd-v3": {
+		"target": "ath79/generic"
+	},
+	"tenda-ac9": {
+		"target": "bcm53xx/generic"
+	},
+	"iom_iconnect-1.1": {
+		"target": "kirkwood/"
+	},
+	"zbtlink_zbt-wa05": {
+		"target": "ramips/mt7620"
+	},
+	"sercomm_ad1018-nor": {
+		"target": "brcm63xx/generic"
+	},
+	"kimax_u35wf": {
+		"target": "ramips/mt7620"
+	},
+	"smartrg-sr400ac": {
+		"target": "bcm53xx/generic"
+	},
+	"tny_a9g20": {
+		"target": "at91/sam9x"
+	},
+	"samsung_cy-swr1100": {
+		"target": "ramips/rt3883"
+	},
+	"cloudengines_pogoplug-series-3": {
+		"target": "oxnas/ox820"
+	},
+	"glinet_gl-ar300m16": {
+		"target": "ath79/generic"
+	},
+	"dlink_dir-300-b7": {
+		"target": "ramips/rt305x"
+	},
+	"huawei_d105": {
+		"target": "ramips/rt305x"
+	},
+	"digilent_zynq-zybo": {
+		"target": "zynq/"
+	},
+	"asus-rt-n18u": {
+		"target": "bcm53xx/generic"
+	},
+	"ventana": {
+		"target": "imx6/"
+	},
+	"tplink_tdw8980": {
+		"target": "lantiq/xrx200"
+	},
+	"engenius_ews511ap": {
+		"target": "ath79/generic"
+	},
+	"samknows_whitebox-v8": {
+		"target": "ramips/mt7621"
+	},
+	"linksys-wrt310n-v1": {
+		"target": "brcm47xx/generic"
+	},
+	"dlink_dir-860l-b1": {
+		"target": "ramips/mt7621"
+	},
+	"huawei_echolife-hg520v": {
+		"target": "brcm63xx/generic"
+	},
+	"winchannel_wb2000": {
+		"target": "ath79/generic"
+	},
+	"youku_yk-l2": {
+		"target": "ramips/mt7621"
+	},
+	"tplink_tl-wr842n-v1": {
+		"target": "ath79/generic"
+	},
+	"pisen_wmm003n": {
+		"target": "ath79/generic"
+	},
+	"globalscale_espressobin-v7": {
+		"target": "mvebu/cortexa53"
+	},
+	"tplink_cpe220-v3": {
+		"target": "ath79/generic"
+	},
+	"netgear-wnr3500l-v2": {
+		"target": "brcm47xx/mips74k"
+	},
+	"trendnet_tew-692gr": {
+		"target": "ramips/rt3883"
+	},
+	"tplink_tl-wr841-v8": {
+		"target": "ath79/tiny"
+	},
+	"asus-wl-300g": {
+		"target": "brcm47xx/legacy"
+	},
+	"linksys-e2000-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"tplink_tl-wr941-v4": {
+		"target": "ath79/tiny"
+	},
+	"netgear_wnr1000-v2": {
+		"target": "ath79/tiny"
+	},
+	"xiaomi_mir3g-v2": {
+		"target": "ramips/mt7621"
+	},
+	"ubnt_unifiac-lr": {
+		"target": "ath79/generic"
+	},
+	"poray_x8": {
+		"target": "ramips/rt305x"
+	},
+	"netgear-wgt634u": {
+		"target": "brcm47xx/legacy"
+	},
+	"zyxel_p-2812hnu-f3": {
+		"target": "lantiq/xrx200"
+	},
+	"qcom_ap-dk01.1-c1": {
+		"target": "ipq40xx/generic"
+	},
+	"xiaomi_mi-router-4q": {
+		"target": "ath79/generic"
+	},
+	"tplink_archer-c7-v2": {
+		"target": "ath79/generic"
+	},
+	"alphanetworks_asl26555-8m": {
+		"target": "ramips/rt305x"
+	},
+	"zio_freezio": {
+		"target": "ramips/mt7621"
+	},
+	"vocore_vocore-16m": {
+		"target": "ramips/rt305x"
+	},
+	"linksys-ea6500-v2": {
+		"target": "bcm53xx/generic"
+	},
+	"iptime_a104ns": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_r6120": {
+		"target": "ramips/mt76x8"
+	},
+	"asus_rt-ac57u": {
+		"target": "ramips/mt7621"
+	},
+	"storlink_sl93512r": {
+		"target": "gemini/"
+	},
+	"marvell_a388-rd": {
+		"target": "mvebu/cortexa9"
+	},
+	"netgear_r6260": {
+		"target": "ramips/mt7621"
+	},
+	"wd_mynet-wifi-rangeextender": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wdr4900-v2": {
+		"target": "ath79/generic"
+	},
+	"asus-rt-n12-b1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"buffalo-wzr-1750dhp": {
+		"target": "bcm53xx/generic"
+	},
+	"elecom_wrh-300cr": {
+		"target": "ramips/mt7620"
+	},
+	"avm_fritzbox-4040": {
+		"target": "ipq40xx/generic"
+	},
+	"tama_w06": {
+		"target": "ramips/mt76x8"
+	},
+	"arcadyan_vgv7510kw22-brn": {
+		"target": "lantiq/xrx200"
+	},
+	"compex_wpj419": {
+		"target": "ipq40xx/generic"
+	},
+	"dlink_dir-300-b1": {
+		"target": "ramips/rt305x"
+	},
+	"upvel_ur-326n4g": {
+		"target": "ramips/rt305x"
+	},
+	"netgear-r6250": {
+		"target": "bcm53xx/generic"
+	},
+	"tplink_archer-c6-v2": {
+		"target": "ath79/generic"
+	},
+	"avm_fritz4020": {
+		"target": "ath79/generic"
+	},
+	"tplink_archer-c20-v4": {
+		"target": "ramips/mt76x8"
+	},
+	"onion_omega2p": {
+		"target": "ramips/mt76x8"
+	},
+	"xunlong_orangepi-2": {
+		"target": "sunxi/cortexa7"
+	},
+	"elecom_wrc-1167ghbk2-s": {
+		"target": "ramips/mt7621"
+	},
+	"netgear-wgr614-v10": {
+		"target": "brcm47xx/mips74k"
+	},
+	"linksys_e1700": {
+		"target": "ramips/mt7620"
+	},
+	"linksys-e1200-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"avm_fritz300e": {
+		"target": "ath79/generic"
+	},
+	"engenius_eap1300": {
+		"target": "ipq40xx/generic"
+	},
+	"asus-wl-330ge": {
+		"target": "brcm47xx/legacy"
+	},
+	"planex_cs-qr10": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_ex6150v2": {
+		"target": "ipq40xx/generic"
+	},
+	"netcore_nw718": {
+		"target": "ramips/rt305x"
+	},
+	"dlink_dwr-118-a1": {
+		"target": "ramips/mt7620"
+	},
+	"solidrun_clearfog-pro-a1": {
+		"target": "mvebu/cortexa9"
+	},
+	"pirelli_a226m": {
+		"target": "brcm63xx/generic"
+	},
+	"gnubee_gb-pc1": {
+		"target": "ramips/mt7621"
+	},
+	"ralink_mt7620a-v22sg-evb": {
+		"target": "ramips/mt7620"
+	},
+	"linksys_ea8500": {
+		"target": "ipq806x/generic"
+	},
+	"edimax_br-6475nd": {
+		"target": "ramips/rt3883"
+	},
+	"linksys-e4200-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"d-team_pbr-m1": {
+		"target": "ramips/mt7621"
+	},
+	"unielec_u7621-06-16m": {
+		"target": "ramips/mt7621"
+	},
+	"mediatek_mt7622-rfb1": {
+		"target": "mediatek/mt7622"
+	},
+	"jcg_jhr-n825r": {
+		"target": "ramips/rt305x"
+	},
+	"asus-rt-n10p": {
+		"target": "brcm47xx/mips74k"
+	},
+	"dlink_dwr-512-b": {
+		"target": "ramips/rt305x"
+	},
+	"engenius_epg5000": {
+		"target": "ath79/generic"
+	},
+	"d-link_dsl-274xb-f1": {
+		"target": "brcm63xx/generic"
+	},
+	"zyxel_nbg6817": {
+		"target": "ipq806x/generic"
+	},
+	"globalscale_espressobin-emmc": {
+		"target": "mvebu/cortexa53"
+	},
+	"asus-rt-ac87u": {
+		"target": "bcm53xx/generic"
+	},
+	"rpi-2": {
+		"target": "brcm2708/bcm2709"
+	},
+	"iptime_a8004t": {
+		"target": "ramips/mt7621"
+	},
+	"thunder_timecloud": {
+		"target": "ramips/mt7621"
+	},
+	"xiaoyu_xy-c5": {
+		"target": "ramips/mt7621"
+	},
+	"devolo_dvl1750c": {
+		"target": "ath79/generic"
+	},
+	"netgear_ex6400": {
+		"target": "ath79/generic"
+	},
+	"at91-sama5d27_som1_ek": {
+		"target": "at91/sama5"
+	},
+	"friendlyarm_nanopi-m1-plus": {
+		"target": "sunxi/cortexa7"
+	},
+	"nec_wg1200cr": {
+		"target": "ath79/generic"
+	},
+	"ubnt_unifiac-mesh": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wa901nd-v2": {
+		"target": "ath79/tiny"
+	},
+	"netgear_evg2000": {
+		"target": "brcm63xx/smp"
+	},
+	"asus_rt-n14u": {
+		"target": "ramips/mt7620"
+	},
+	"brcm_bcm96358vw": {
+		"target": "brcm63xx/smp"
+	},
+	"ubnt_unifiac-lite": {
+		"target": "ath79/generic"
+	},
+	"cloudengines_pogoplugpro": {
+		"target": "oxnas/ox820"
+	},
+	"asus-rt-ac56u": {
+		"target": "bcm53xx/generic"
+	},
+	"tplink_tl-wr840n-v5": {
+		"target": "ramips/mt76x8"
+	},
+	"wansview_ncs601w": {
+		"target": "ramips/rt305x"
+	},
+	"petatel_psr-680w": {
+		"target": "ramips/rt305x"
+	},
+	"ubnt2-pico2": {
+		"target": "ath25/"
+	},
+	"ubnt_nanostation-ac": {
+		"target": "ath79/generic"
+	},
+	"t-com_speedport-w-303v": {
+		"target": "brcm63xx/smp"
+	},
+	"zbtlink_zbt-ape522ii": {
+		"target": "ramips/mt7620"
+	},
+	"youku_yk1": {
+		"target": "ramips/mt7620"
+	},
+	"d-team_pbr-d1": {
+		"target": "ramips/mt76x8"
+	},
+	"netgear-wnr834b-v2": {
+		"target": "brcm47xx/legacy"
+	},
+	"globalscale_mirabox": {
+		"target": "mvebu/cortexa9"
+	},
+	"huawei_hg255d": {
+		"target": "ramips/rt305x"
+	},
+	"edimax_rg21s": {
+		"target": "ramips/mt7621"
+	},
+	"widora_neo-16m": {
+		"target": "ramips/mt76x8"
+	},
+	"iom_ix2_200": {
+		"target": "kirkwood/"
+	},
+	"brcm_bcm96348gw-11": {
+		"target": "brcm63xx/generic"
+	},
+	"jcg_jhr-n805r": {
+		"target": "ramips/rt305x"
+	},
+	"lenovo_newifi-y1": {
+		"target": "ramips/mt7620"
+	},
+	"cubietech_cubietruck": {
+		"target": "sunxi/cortexa7"
+	},
+	"cisco_on100": {
+		"target": "kirkwood/"
+	},
+	"motorola-wr850g": {
+		"target": "brcm47xx/legacy"
+	},
+	"standard": {
+		"target": "brcm47xx/mips74k"
+	},
+	"devolo_dvl1750i": {
+		"target": "ath79/generic"
+	},
+	"unbranded_xdx-rn502j": {
+		"target": "ramips/rt305x"
+	},
+	"zyxel_keenetic": {
+		"target": "ramips/rt305x"
+	},
+	"at91-sama5d2_xplained": {
+		"target": "at91/sama5"
+	},
+	"afoundry_ew1200": {
+		"target": "ramips/mt7621"
+	},
+	"phicomm_psg1208": {
+		"target": "ramips/mt7620"
+	},
+	"devolo_dvl1200e": {
+		"target": "ath79/generic"
+	},
+	"poray_m4-4m": {
+		"target": "ramips/rt305x"
+	},
+	"netgear-r8000": {
+		"target": "bcm53xx/generic"
+	},
+	"netgear_wndr4700": {
+		"target": "apm821xx/nand"
+	},
+	"digilent_zynq-zybo-z7": {
+		"target": "zynq/"
+	},
+	"cloudengines_pogoe02": {
+		"target": "kirkwood/"
+	},
+	"bt_homehub-v3a": {
+		"target": "lantiq/xway"
+	},
+	"netgear_ex7300": {
+		"target": "ath79/generic"
+	},
+	"dlink_dir-615-d": {
+		"target": "ramips/rt305x"
+	},
+	"poray_ip2202": {
+		"target": "ramips/rt305x"
+	},
+	"netgear_wndr4300-v2": {
+		"target": "ath79/nand"
+	},
+	"tplink_tl-wr941-v2": {
+		"target": "ath79/tiny"
+	},
+	"linksys-wrt54g3g-em": {
+		"target": "brcm47xx/legacy"
+	},
+	"marvell_a385-db-ap": {
+		"target": "mvebu/cortexa9"
+	},
+	"unielec_u7623-02-emmc-512m": {
+		"target": "mediatek/mt7623"
+	},
+	"at91sam9g20ek_2mmc": {
+		"target": "at91/sam9x"
+	},
+	"brcm_bcm96338gw": {
+		"target": "brcm63xx/smp"
+	},
+	"buffalo_wli-tx4-ag300n": {
+		"target": "ramips/rt288x"
+	},
+	"belkin_f7c027": {
+		"target": "ramips/rt305x"
+	},
+	"sitecom_wlr-6000": {
+		"target": "ramips/rt3883"
+	},
+	"phicomm_k2g": {
+		"target": "ramips/mt7620"
+	},
+	"zbtlink_zbt-we1226": {
+		"target": "ramips/mt76x8"
+	},
+	"edimax_3g-6200nl": {
+		"target": "ramips/rt305x"
+	},
+	"netgear_dm200": {
+		"target": "lantiq/xrx200"
+	},
+	"glinet_gl-ar300m-nand": {
+		"target": "ath79/nand"
+	},
+	"tplink_tl-wr842n-v5": {
+		"target": "ramips/mt76x8"
+	},
+	"yuncore_a770": {
+		"target": "ath79/generic"
+	},
+	"ubnt_acb-isp": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-mr3020-v3": {
+		"target": "ramips/mt76x8"
+	},
+	"wd_mynet-n750": {
+		"target": "ath79/generic"
+	},
+	"dlink_dir-685": {
+		"target": "gemini/"
+	},
+	"poray_x5": {
+		"target": "ramips/rt305x"
+	},
+	"nec_wg2600hp": {
+		"target": "ipq806x/generic"
+	},
+	"lemaker_bananapi-m2-ultra": {
+		"target": "sunxi/cortexa7"
+	},
+	"at91sam9263ek": {
+		"target": "at91/sam9x"
+	},
+	"tplink_tl-wr841-v7": {
+		"target": "ath79/tiny"
+	},
+	"linksys_ea8300": {
+		"target": "ipq40xx/generic"
+	},
+	"unbranded_wr512-3gn-8m": {
+		"target": "ramips/rt305x"
+	},
+	"netgear-wnr3500l-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"arcadyan_arv752dpw": {
+		"target": "lantiq/xway"
+	},
+	"luxul-xbr-4500": {
+		"target": "bcm53xx/generic"
+	},
+	"tny_a9260": {
+		"target": "at91/sam9x"
+	},
+	"linksys-e3200-v1": {
+		"target": "brcm47xx/mips74k"
+	},
+	"linksys-wrt350n-v1": {
+		"target": "brcm47xx/generic"
+	},
+	"mercury_mac1200r-v2": {
+		"target": "ramips/mt76x8"
+	},
+	"belkin_f9k1109v1": {
+		"target": "ramips/rt3883"
+	},
+	"mikrotik_rbm33g": {
+		"target": "ramips/mt7621"
+	},
+	"ls1046ardb": {
+		"target": "layerscape/armv8_64b"
+	},
+	"xunlong_orangepi-plus": {
+		"target": "sunxi/cortexa7"
+	},
+	"alfa-network_ap120c-ac": {
+		"target": "ipq40xx/generic"
+	},
+	"dlink_dwr-116-a1": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_tl-wr842n-v2": {
+		"target": "ath79/generic"
+	},
+	"netis_wf2881": {
+		"target": "ramips/mt7621"
+	},
+	"buffalo_whr-g301n": {
+		"target": "ath79/tiny"
+	},
+	"plathome_openblocks-ax3-4": {
+		"target": "mvebu/cortexa9"
+	},
+	"jcg_jhr-n926r": {
+		"target": "ramips/rt305x"
+	},
+	"netgear_wndr4500-v3": {
+		"target": "ath79/nand"
+	},
+	"xiaomi_miwifi-mini": {
+		"target": "ramips/mt7620"
+	},
+	"huawei-e970": {
+		"target": "brcm47xx/legacy"
+	},
+	"at91sam9g25ek": {
+		"target": "at91/sam9x"
+	},
+	"asus-rt-n10u": {
+		"target": "brcm47xx/mips74k"
+	},
+	"glinet_gl-ar750": {
+		"target": "ath79/generic"
+	},
+	"ubnt_unifi": {
+		"target": "ath79/generic"
+	},
+	"asus-rt-n10": {
+		"target": "brcm47xx/mips74k"
+	},
+	"aruba_ap-303h": {
+		"target": "ipq40xx/generic"
+	},
+	"buffalo_bhr-4grv": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wr841-v10": {
+		"target": "ath79/tiny"
+	},
+	"qxwlan_e2600ac-c2": {
+		"target": "ipq40xx/generic"
+	},
+	"at91sam9x25ek": {
+		"target": "at91/sam9x"
+	},
+	"lemaker_bananapi-bpi-r64": {
+		"target": "mediatek/mt7622"
+	},
+	"omnima_miniembplug": {
+		"target": "ramips/rt305x"
+	},
+	"usrobotics-usr5461": {
+		"target": "brcm47xx/legacy"
+	},
+	"engenius_ecb1750": {
+		"target": "ath79/generic"
+	},
+	"dlink_dir-835-a1": {
+		"target": "ath79/generic"
+	},
+	"edimax_ew-7476rpc": {
+		"target": "ramips/mt7620"
+	},
+	"ti_am335x-evm": {
+		"target": "omap/"
+	},
+	"tplink_tl-wr2543-v1": {
+		"target": "ath79/generic"
+	},
+	"alfa-network_ac1200rm": {
+		"target": "ramips/mt7620"
+	},
+	"lantiq_easy98000-nand": {
+		"target": "lantiq/falcon"
+	},
+	"ethernut5": {
+		"target": "at91/sam9x"
+	},
+	"airlink101_ar670w": {
+		"target": "ramips/rt288x"
+	},
+	"marsboard_a10-marsboard": {
+		"target": "sunxi/cortexa8"
+	},
+	"netgear_wndr3700-v5": {
+		"target": "ramips/mt7621"
+	},
+	"observa_vh4032n": {
+		"target": "brcm63xx/generic"
+	},
+	"generic": {
+		"target": "ath25/"
+	},
+	"nexx_wt3020-8m": {
+		"target": "ramips/mt7620"
+	},
+	"netgear_wndap660": {
+		"target": "apm821xx/nand"
+	},
+	"netgear-wnr3500l-v1-na": {
+		"target": "brcm47xx/mips74k"
+	},
+	"tplink_cpe510-v1": {
+		"target": "ath79/generic"
+	},
+	"zorlik_zl5900v2": {
+		"target": "ramips/rt305x"
+	},
+	"solidrun_clearfog-base-a1": {
+		"target": "mvebu/cortexa9"
+	},
+	"qihoo_c301": {
+		"target": "ath79/generic"
+	},
+	"lamobo_lamobo-r1": {
+		"target": "sunxi/cortexa7"
+	},
+	"seagate_goflexnet": {
+		"target": "kirkwood/"
+	},
+	"hilink_hlk-rm04": {
+		"target": "ramips/rt305x"
+	},
+	"buffalo_bhr-4grv2": {
+		"target": "ath79/generic"
+	},
+	"trendnet_tew-691gr": {
+		"target": "ramips/rt3883"
+	},
+	"lantiq_easy98020": {
+		"target": "lantiq/falcon"
+	},
+	"rpi-3": {
+		"target": "brcm2708/bcm2710"
+	},
+	"tplink_tl-wr1043n-v5": {
+		"target": "ath79/generic"
+	},
+	"tplink_tdw8970": {
+		"target": "lantiq/xrx200"
+	},
+	"xunlong_orangepi-zero-plus": {
+		"target": "sunxi/cortexa53"
+	},
+	"linksys-wrtsl54gs": {
+		"target": "brcm47xx/legacy"
+	},
+	"marduk": {
+		"target": "pistachio/"
+	},
+	"devolo_dvl1200i": {
+		"target": "ath79/generic"
+	},
+	"globalscale_espressobin": {
+		"target": "mvebu/cortexa53"
+	},
+	"tplink_cpe510-v3": {
+		"target": "ath79/generic"
+	},
+	"lantiq_falcon-sfp": {
+		"target": "lantiq/falcon"
+	},
+	"netgear-wndr4000": {
+		"target": "brcm47xx/mips74k"
+	},
+	"raidsonic_ib-nas62x0": {
+		"target": "kirkwood/"
+	},
+	"dlink_dir-510l": {
+		"target": "ramips/mt7620"
+	},
+	"ti_omap4-panda": {
+		"target": "omap/"
+	},
+	"dlink_dir-320-b1": {
+		"target": "ramips/rt305x"
+	},
+	"tny_a9263": {
+		"target": "at91/sam9x"
+	},
+	"mikrotik_routerboard-wap-g-5hact2hnd": {
+		"target": "ath79/generic"
+	},
+	"ubnt5": {
+		"target": "ath25/"
+	},
+	"brcm_bcm96348gw-10": {
+		"target": "brcm63xx/generic"
+	},
+	"tplink_archer-mr200": {
+		"target": "ramips/mt7620"
+	},
+	"globalscale_espressobin-v7-emmc": {
+		"target": "mvebu/cortexa53"
+	},
+	"asus_rt-ac85p": {
+		"target": "ramips/mt7621"
+	},
+	"adtran_bsap1840": {
+		"target": "ath79/generic"
+	},
+	"tplink_tl-wr941nd-v6": {
+		"target": "ath79/tiny"
+	},
+	"tplink_tl-wdr4900-v1": {
+		"target": "mpc85xx/generic"
+	},
+	"netgear_wnr2000-v3": {
+		"target": "ath79/tiny"
+	},
+	"tplink-archer-c9-v1": {
+		"target": "bcm53xx/generic"
+	},
+	"ubnt_edgeswitch-5xp": {
+		"target": "ath79/generic"
+	},
+	"ti_am335x-bone-black": {
+		"target": "omap/"
+	},
+	"linksys-wrt150n": {
+		"target": "brcm47xx/legacy"
+	},
+	"hiwifi_hc5861b": {
+		"target": "ramips/mt76x8"
+	},
+	"glinet_gl-ar150": {
+		"target": "ath79/generic"
+	},
+	"zbtlink_zbt-wd323": {
+		"target": "ath79/generic"
+	},
+	"dovado_tiny-ac": {
+		"target": "ramips/mt7620"
+	},
+	"edimax_ew-7478ac": {
+		"target": "ramips/mt7620"
+	},
+	"tplink_cpe220-v2": {
+		"target": "ath79/generic"
+	},
+	"tplink_archer-c60-v1": {
+		"target": "ath79/generic"
+	},
+	"tplink_archer-c7-v5": {
+		"target": "ath79/generic"
+	},
+	"dlink_dwr-118-a2": {
+		"target": "ramips/mt7620"
+	},
+	"belkin_f5d8235-v1": {
+		"target": "ramips/rt288x"
+	},
+	"glinet_6416": {
+		"target": "ath79/generic"
+	},
+	"ubnt_unifiac-mesh-pro": {
+		"target": "ath79/generic"
+	},
+	"unielec_u7621-06-64m": {
+		"target": "ramips/mt7621"
+	},
+	"buffalo_whr-1166d": {
+		"target": "ramips/mt7620"
+	},
+	"wrtnode_wrtnode2p": {
+		"target": "ramips/mt76x8"
+	},
+	"dlink_dap-1350": {
+		"target": "ramips/rt305x"
+	},
+	"lemaker_bananapi-bpi-r2": {
+		"target": "mediatek/mt7623"
+	},
+	"ubnt_nanostation-m-xw": {
+		"target": "ath79/generic"
+	},
+	"friendlyarm_nanopi-neo-air": {
+		"target": "sunxi/cortexa7"
+	},
+	"zbtlink_zbt-wg2626": {
+		"target": "ramips/mt7621"
+	},
+	"tplink_cpe210-v1": {
+		"target": "ath79/generic"
+	},
+	"asiarf_ap7621-nv1": {
+		"target": "ramips/mt7621"
+	},
+	"at91sam9g35ek": {
+		"target": "at91/sam9x"
+	},
+	"tplink_tl-wdr3600-v1": {
+		"target": "ath79/generic"
+	},
+	"microduino_microwrt": {
+		"target": "ramips/mt7620"
+	},
+	"zbtlink_zbt-wg3526-32m": {
+		"target": "ramips/mt7621"
+	},
+	"duzun_dm06": {
+		"target": "ramips/mt76x8"
+	},
+	"xunlong_orangepi-zero": {
+		"target": "sunxi/cortexa7"
+	},
+	"tplink_re450-v2": {
+		"target": "ath79/generic"
+	},
+	"zbtlink_zbt-cpe102": {
+		"target": "ramips/mt7620"
+	}
+}
