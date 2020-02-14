@@ -4,6 +4,10 @@ from flask import Flask, request, g
 import json
 import hashlib
 from pathlib import Path
+from rq import Connection, Queue
+
+from build import build
+from common import get_hash, get_packages_hash
 
 app = Flask(__name__)
 
@@ -22,15 +26,11 @@ def get_packages():
     return g.packages
 
 
-def get_hash(string, length):
-    h = hashlib.sha256()
-    h.update(bytes(string, "utf-8"))
-    response_hash = h.hexdigest()[:length]
-    return response_hash
-
-
-def get_packages_hash(packages):
-    return get_hash(" ".join(sorted(list(set(packages)))), 12)
+def get_queue():
+    if "queue" not in g:
+        with Connection():
+            g.queue = Queue()
+    return g.queue
 
 
 def get_request_hash(request_data):
@@ -46,31 +46,67 @@ def get_request_hash(request_data):
 
 
 def validate_request(request_data):
-    if not request_data.get("profile", "") in get_profiles():
-        return (1, "")
+    available_profiles = get_profiles()
+    target = get_profiles().get(request_data.get("profile", ""), {}).get("target")
+    if not target:
+        return (
+            {
+                "status": "bad_profile",
+                "message": f"Unknown profile: {request_data['profile']}",
+            },
+            400,
+        )
+    else:
+        request_data["target"] = target
+
     unknown_packages = set(request_data.get("packages", [])) - get_packages()
     if unknown_packages:
-        return (2, unknown_packages)
+        return (
+            {
+                "status": "bad_packages",
+                "message": f"Unknown package(s): {', '.join(unknown_packages)}",
+            },
+            422,
+        )
 
-
-def lookup_request(request_data):
-    request_hash = get_request_hash(request_data)
-    print(request_hash)
-    return False
+    return (None, None)
 
 
 @app.route("/api/build", methods=["POST"])
-def entry_point():
+def api_build():
+    request_data = dict(request.get_json())
     request_data = request.get_json()
-    lookup = lookup_request(request_data)
-    if lookup:
-        return "Found", 200
+    request_hash = get_request_hash(request_data)
+    job = get_queue().fetch_job(request_hash)
+    response = {}
+    status = 200
+    if job is None:
+        response, status = validate_request(request_data)
+        if not response:
+            job = get_queue().enqueue(
+                build,
+                request_data,
+                job_id=request_hash,
+                result_ttl="24h",
+                failure_ttl="12h",
+            )
+            status = 202
 
-    invalid = validate_request(request_data)
-    if invalid:
-        return f"Error {invalid}"
+    if job.is_failed:
+        status = 500
+        response["message"] = job.exc_info.strip().split("\n")[-1]
 
-    return "OK", 202
+    if job.is_queued:
+        response = {"status": "queued"}
+
+    if job.is_finished:
+        response["url"] = "https://localhost:5000/store/"
+        response["build_at"] = job.ended_at
+        response.update(json.loads(Path(job.result).read_text()))
+
+    response["enqueued_at"] = job.enqueued_at
+
+    return response, status
 
 
 if __name__ == "__main__":
