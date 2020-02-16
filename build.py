@@ -18,9 +18,9 @@ base_url = "https://cdn.openwrt.org/snapshots/targets/{target}/{filename}"
 
 
 def build(request):
-    cache = (Path("cache") / request["target"]).parent
+    cache = (Path("cache") / request["version"] / request["target"]).parent
     target, subtarget = request["target"].split("/")
-    store = Path().cwd() / "store" / request["target"]
+    store = Path().cwd() / "store" / request["version"] / request["target"]
     sums_file = Path(cache / f"{subtarget}_sums")
     sig_file = Path(cache / f"{subtarget}_sums.sig")
 

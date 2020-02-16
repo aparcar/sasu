@@ -1,4 +1,5 @@
 {
-	"packages": ["tmux", "vim", "bmon"],
+	"version": "SNAPSHOT",
+	"packages": ["tmux", "vim"],
 	"profile": "tplink_tl-wdr4300-v1"
 }
