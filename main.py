@@ -1,15 +1,17 @@
 #!/usr/bin/python
 # coding: utf-8
-from flask import Flask, request, g
+from flask import Flask, request, g, current_app
 import json
-import hashlib
 from pathlib import Path
 from rq import Connection, Queue
+from os import getenv
 
 from build import build
 from common import get_hash, get_packages_hash
 
 app = Flask(__name__)
+app_settings = getenv("APP_SETTINGS", "config.DevelopmentConfig")
+app.config.from_object(app_settings)
 
 
 def get_profiles():
@@ -46,7 +48,6 @@ def get_request_hash(request_data):
 
 
 def validate_request(request_data):
-    available_profiles = get_profiles()
     target = get_profiles().get(request_data.get("profile", ""), {}).get("target")
     if not target:
         return (
@@ -100,7 +101,7 @@ def api_build():
         response = {"status": "queued"}
 
     if job.is_finished:
-        response["url"] = "https://localhost:5000/store/"
+        response["url"] = current_app.config["STORE_URL"]
         response["build_at"] = job.ended_at
         response.update(json.loads(Path(job.result).read_text()))
 

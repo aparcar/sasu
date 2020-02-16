@@ -1,59 +1,73 @@
 import time
 import urllib.request
+import json
 import urllib
 from pathlib import Path
 import re
 import nacl.signing
 import struct
 import base64
+from shutil import rmtree
 import tarfile
 import subprocess
-import time
 
-from common import get_hash, get_packages_hash
+from common import get_packages_hash
 
 keystr = "RWS1BD5w+adc3j2Hqg9+b66CvLR7NlHbsj7wjNVj0XGt/othDgIAOJS+"
 base_url = "https://cdn.openwrt.org/snapshots/targets/{target}/{filename}"
 
-def setup_ib(request):
-    cache = Path("cache") / request["target"]
-    download_file("sha256sums.sig")
-
-    pkalg, keynum, pubkey = struct.unpack("!2s8s32s", base64.b64decode(keystr))
-    sig = base64.b64decode((cache / "sha256sums.sig").read_text().splitlines()[-1])
-
-    pkalg, keynum, sig = struct.unpack("!2s8s64s", sig)
-
-    verify_key = nacl.signing.VerifyKey(pubkey, encoder=nacl.encoding.RawEncoder)
-    try:
-        verify_key.verify((cache / "sha256sums").read_bytes(), sig)
-    except nacl.exceptions.CryptoError:
-        print("bad signature")
-
-    download_file("sha256sums")
-
-    # openwrt-imagebuilder-ath79-generic.Linux-x86_64.tar.xz
-    ib_search = re.search(
-        r"^(.{64}) \*(openwrt-imagebuilder-.+?\.Linux-x86_64\.tar\.xz)$",
-        (cache / "sha256sums").read_text(),
-        re.MULTILINE,
-    )
-
-    assert ib_search
-
-    ib_hash, ib_archive = ib_search.groups()
-
-    download_file(ib_archive)
-
-    tar = tarfile.open(cache / ib_archive)
-    tar.extractall(path=cache)
-    tar.close()
-
-    (cache / ib_archive.rsplit(".", maxsplit=2)[0]).rename(cache / request["target"])
 
 def build(request):
-    cache = Path("cache") / request["target"]
+    cache = (Path("cache") / request["target"]).parent
+    target, subtarget = request["target"].split("/")
     store = Path().cwd() / "store" / request["target"]
+    sums_file = Path(cache / f"{subtarget}_sums")
+    sig_file = Path(cache / f"{subtarget}_sums.sig")
+
+    def setup_ib(request):
+        if (cache / subtarget).is_dir():
+            rmtree(cache / subtarget)
+
+        download_file("sha256sums", sums_file)
+        download_file("sha256sums.sig", sig_file)
+
+        pkalg, keynum, pubkey = struct.unpack("!2s8s32s", base64.b64decode(keystr))
+        sig = base64.b64decode(sig_file.read_text().splitlines()[-1])
+
+        pkalg, keynum, sig = struct.unpack("!2s8s64s", sig)
+
+        verify_key = nacl.signing.VerifyKey(pubkey, encoder=nacl.encoding.RawEncoder)
+        try:
+            verify_key.verify(sums_file.read_bytes(), sig)
+        except nacl.exceptions.CryptoError:
+            assert False, "bad signature"
+
+        # openwrt-imagebuilder-ath79-generic.Linux-x86_64.tar.xz
+        ib_search = re.search(
+            r"^(.{64}) \*(openwrt-imagebuilder-.+?\.Linux-x86_64\.tar\.xz)$",
+            sums_file.read_text(),
+            re.MULTILINE,
+        )
+
+        assert ib_search
+
+        ib_hash, ib_archive = ib_search.groups()
+
+        download_file(ib_archive)
+
+        tar = tarfile.open(cache / ib_archive)
+        tar.extractall(path=cache)
+        tar.close()
+
+        (cache / ib_archive).unlink()
+
+        (cache / ib_archive.rsplit(".", maxsplit=2)[0]).rename(cache / subtarget)
+
+    def download_file(filename, dest=None):
+        urllib.request.urlretrieve(
+            base_url.format(**{"target": request["target"], "filename": filename}),
+            dest or (cache / filename),
+        )
 
     if not (cache).is_dir():
         cache.mkdir(parents=True, exist_ok=True)
@@ -61,26 +75,23 @@ def build(request):
     if not (store).is_dir():
         store.mkdir(parents=True, exist_ok=True)
 
-    def download_file(filename):
-        urllib.request.urlretrieve(
-            base_url.format(**{"target": request["target"], "filename": filename}),
-            cache / filename,
-        )
-
-    sig_file = cache / "sha256sums.sig"
     if sig_file.is_file():
-        last_modified = time.mktime(time.strptime(
-            urllib.request.urlopen(
-                base_url.format(
-                    **{"target": request["target"], "filename": "sha256sums.sig"}
+        last_modified = time.mktime(
+            time.strptime(
+                urllib.request.urlopen(
+                    base_url.format(
+                        **{"target": request["target"], "filename": "sha256sums.sig"}
+                    )
                 )
+                .info()
+                .get("Last-Modified"),
+                "%a, %d %b %Y %H:%M:%S %Z",
             )
-            .info()
-            .get("Last-Modified"),
-            "%a, %d %b %Y %H:%M:%S %Z",
-        ))
+        )
         if sig_file.stat().st_mtime < last_modified:
             setup_ib(request)
+    else:
+        setup_ib(request)
 
     manifest = subprocess.run(
         [
@@ -91,7 +102,7 @@ def build(request):
         ],
         text=True,
         capture_output=True,
-        cwd=cache,
+        cwd=cache / subtarget,
     )
 
     manifest_packages = set(
@@ -103,7 +114,7 @@ def build(request):
     if not (store / packages_hash).is_dir():
         (store / packages_hash).mkdir(parents=True, exist_ok=True)
 
-    foo = subprocess.run(
+    image_build = subprocess.run(
         [
             "make",
             "image",
@@ -114,7 +125,11 @@ def build(request):
         ],
         text=True,
         capture_output=True,
-        cwd=cache,
+        cwd=cache / subtarget,
     )
+
+    assert not image_build.returncode, "ImageBuilder failed"
+
+    Path(store / packages_hash / "buildlog.txt").write_text(image_build.stdout)
 
     return next(Path(store / packages_hash).glob("*.json"))
