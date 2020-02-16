@@ -20,7 +20,8 @@ base_url = "https://cdn.openwrt.org/snapshots/targets/{target}/{filename}"
 def build(request):
     cache = (Path("cache") / request["version"] / request["target"]).parent
     target, subtarget = request["target"].split("/")
-    store = Path().cwd() / "store" / request["version"] / request["target"]
+    root = Path().cwd()
+    store = Path("store") / request["version"] / request["target"]
     sums_file = Path(cache / f"{subtarget}_sums")
     sig_file = Path(cache / f"{subtarget}_sums.sig")
 
@@ -72,8 +73,8 @@ def build(request):
     if not (cache).is_dir():
         cache.mkdir(parents=True, exist_ok=True)
 
-    if not (store).is_dir():
-        store.mkdir(parents=True, exist_ok=True)
+    if not (root / store).is_dir():
+        (root / store).mkdir(parents=True, exist_ok=True)
 
     if sig_file.is_file():
         last_modified = time.mktime(
@@ -121,7 +122,7 @@ def build(request):
             f"PROFILE={request['profile']}",
             f"PACKAGES={' '.join(request['packages'])}",
             f"EXTRA_IMAGE_NAME={packages_hash}",
-            f"BIN_DIR={store / packages_hash}",
+            f"BIN_DIR={root / store / packages_hash}",
         ],
         text=True,
         capture_output=True,
@@ -130,6 +131,6 @@ def build(request):
 
     assert not image_build.returncode, "ImageBuilder failed"
 
-    Path(store / packages_hash / "buildlog.txt").write_text(image_build.stdout)
+    Path(root / store / packages_hash / "buildlog.txt").write_text(image_build.stdout)
 
     return next(Path(store / packages_hash).glob("*.json"))

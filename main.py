@@ -110,17 +110,17 @@ def validate_request(request_data):
 
 
 @app.route("/api/profiles/<version>")
-def api_profiless(version):
+def api_profiles(version):
     return send_from_directory(".", f"profiles-{version}.json")
 
 
 @app.route("/api/names/<version>")
-def api_namess(version):
+def api_names(version):
     return send_from_directory(".", f"names-{version}.json")
 
 
 @app.route("/api/packages/<version>")
-def api_profiless(version):
+def api_packages(version):
     return send_from_directory(".", f"packages-{version}.json")
 
 
@@ -141,7 +141,7 @@ def api_build():
         result_ttl = "24h"
         failure_ttl = "12h"
     else:
-        result_ttl = "1m"
+        result_ttl = "5m"
         failure_ttl = "5m"
 
     if job is None:
@@ -165,9 +165,12 @@ def api_build():
             response = {"status": "queued"}
 
         if job.is_finished:
-            response["url"] = current_app.config["STORE_URL"]
+            response["url"] = (
+                current_app.config["STORE_URL"]
+                + "/" + str(job.result.parent)
+            )
             response["build_at"] = job.ended_at
-            response.update(json.loads(Path(job.result).read_text()))
+            response.update(json.loads(job.result.read_text()))
 
         response["enqueued_at"] = job.enqueued_at
 
