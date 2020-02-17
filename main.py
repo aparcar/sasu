@@ -9,7 +9,7 @@ from os import getenv
 from build import build
 from common import get_hash, get_packages_hash
 
-app = Flask(__name__, static_url_path="")
+app = Flask(__name__, static_url_path="", static_folder="yafs/")
 app_settings = getenv("APP_SETTINGS", "config.DevelopmentConfig")
 app.config.from_object(app_settings)
 
@@ -109,6 +109,17 @@ def validate_request(request_data):
     return (None, None)
 
 
+@app.route("/")
+@app.route("/<path:path>")
+def root(path="index.html"):
+    return send_from_directory("yafs/", path)
+
+
+@app.route("/store/<path:path>")
+def send_js(path):
+    return send_from_directory("store", path)
+
+
 @app.route("/api/profiles/<version>")
 def api_profiles(version):
     return send_from_directory(".", f"profiles-{version}.json")
@@ -131,7 +142,7 @@ def api_versions():
 
 @app.route("/api/build", methods=["POST"])
 def api_build():
-    request_data = dict(request.get_json())
+    print(request.get_json())
     request_data = request.get_json()
     request_hash = get_request_hash(request_data)
     job = get_queue().fetch_job(request_hash)
@@ -141,12 +152,13 @@ def api_build():
         result_ttl = "24h"
         failure_ttl = "12h"
     else:
-        result_ttl = "5m"
-        failure_ttl = "5m"
+        result_ttl = "15m"
+        failure_ttl = "15m"
 
     if job is None:
         response, status = validate_request(request_data)
         if not response:
+            status = 202
             job = get_queue().enqueue(
                 build,
                 request_data,
@@ -154,20 +166,19 @@ def api_build():
                 result_ttl=result_ttl,
                 failure_ttl=failure_ttl,
             )
-            status = 202
 
     if job:
         if job.is_failed:
             status = 500
             response["message"] = job.exc_info.strip().split("\n")[-1]
 
-        if job.is_queued:
-            response = {"status": "queued"}
+        if job.is_queued or job.is_started:
+            status = 202
+            response = {"status": job.get_status()}
 
         if job.is_finished:
             response["url"] = (
-                current_app.config["STORE_URL"]
-                + "/" + str(job.result.parent)
+                current_app.config["STORE_URL"] + "/" + str(job.result.parent)
             )
             response["build_at"] = job.ended_at
             response.update(json.loads(job.result.read_text()))

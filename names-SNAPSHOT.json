@@ -3,8 +3,8 @@
 	"target": "brcm63xx/generic",
 	"version_commit": "r12220-dba431d8ab",
 	"version_number": "SNAPSHOT",
-	"link": "https://downloads.openwrt.org/snapshots/targets/%target/%file",
-	"profiles": {
+	"link": "https://downloads.openwrt.org/snapshots/targets/{target}",
+	"models": {
 		"NuCom R5010UN v2": {
 			"target": "brcm63xx/smp",
 			"id": "nucom_r5010un-v2",
