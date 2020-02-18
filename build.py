@@ -14,7 +14,7 @@ import logging
 
 from common import get_packages_hash
 
-log = logging.getLogger(__name__)
+log = logging.getLogger("rq.worker")
 log.setLevel(logging.DEBUG)
 
 keystr = "RWS1BD5w+adc3j2Hqg9+b66CvLR7NlHbsj7wjNVj0XGt/othDgIAOJS+"
@@ -22,17 +22,17 @@ base_url = "https://cdn.openwrt.org/snapshots/targets/{target}/{filename}"
 
 
 def build(request):
-    log.error(f"Building {request}")
-    print(f"Building {request}")
+    log.debug(f"Building {request}")
     cache = (Path("cache") / request["version"] / request["target"]).parent
     target, subtarget = request["target"].split("/")
     root = Path().cwd()
+    log.debug(f"Current Working Dir {root}")
     store = Path("store") / request["version"] / request["target"]
     sums_file = Path(cache / f"{subtarget}_sums")
     sig_file = Path(cache / f"{subtarget}_sums.sig")
 
     def setup_ib():
-        print("Setting up ImageBuilder")
+        log.debug("Setting up ImageBuilder")
         if (cache / subtarget).is_dir():
             rmtree(cache / subtarget)
 
@@ -57,7 +57,7 @@ def build(request):
             re.MULTILINE,
         )
 
-        assert ib_search
+        assert ib_search,"No ImageBuilder in checksums found"
 
         ib_hash, ib_archive = ib_search.groups()
 
@@ -66,13 +66,14 @@ def build(request):
         tar = tarfile.open(cache / ib_archive)
         tar.extractall(path=cache)
         tar.close()
+        log.debug("Extracted TAR {ib_archive}")
 
         (cache / ib_archive).unlink()
 
         (cache / ib_archive.rsplit(".", maxsplit=2)[0]).rename(cache / subtarget)
 
     def download_file(filename, dest=None):
-        print(f"Downloading {filename}")
+        log.debug(f"Downloading {filename}")
         urllib.request.urlretrieve(
             base_url.format(**{"target": request["target"], "filename": filename}),
             dest or (cache / filename),
@@ -97,10 +98,10 @@ def build(request):
                 "%a, %d %b %Y %H:%M:%S %Z",
             )
         )
-        print(f"Last-Modified {last_modified}")
-        print(f"Local File {sig_file.stat().st_mtime}")
+        log.debug(f"Last-Modified {last_modified}")
+        log.debug(f"Local File {sig_file.stat().st_mtime}")
         if sig_file.stat().st_mtime < last_modified:
-            print("Newer ImageBuilder upstream available")
+            log.debug("Newer ImageBuilder upstream available")
             setup_ib()
     else:
         setup_ib()
@@ -120,10 +121,10 @@ def build(request):
     manifest_packages = set(
         list(map(lambda p: p.split()[0], manifest.stdout.splitlines()))
     )
-    print(f"Manifest Packages: {manifest_packages}")
+    log.debug(f"Manifest Packages: {manifest_packages}")
 
     packages_hash = get_packages_hash(manifest_packages)
-    print(f"Packages Hash {packages_hash}")
+    log.debug(f"Packages Hash {packages_hash}")
 
     if not (store / packages_hash).is_dir():
         (store / packages_hash).mkdir(parents=True, exist_ok=True)
