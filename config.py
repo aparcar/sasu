@@ -4,7 +4,7 @@ class Config(object):
 
 
 class ProductionConfig(Config):
-    STORE_URL = "https://firmware.aparcar.org"
+    STORE_URL = "https://images.aparcar.org"
 
 
 class DevelopmentConfig(Config):
