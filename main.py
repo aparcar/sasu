@@ -2,6 +2,7 @@
 # coding: utf-8
 
 from flask import Flask, request, g, current_app, send_from_directory
+from flask_cors import CORS
 import json
 from pathlib import Path
 from rq import Connection, Queue
@@ -13,6 +14,8 @@ from common import get_hash, get_packages_hash
 app = Flask(__name__, static_url_path="", static_folder="yafs/")
 app_settings = getenv("APP_SETTINGS", "config.DevelopmentConfig")
 app.config.from_object(app_settings)
+
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 
 def get_versions():
