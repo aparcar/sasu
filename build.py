@@ -27,7 +27,7 @@ def build(request):
     target, subtarget = request["target"].split("/")
     root = Path().cwd()
     log.debug(f"Current Working Dir {root}")
-    store = Path("store") / request["version"] / request["target"]
+    store = Path("store") / request["version"] / request["target"] / request["profile"]
     sums_file = Path(cache / f"{subtarget}_sums")
     sig_file = Path(cache / f"{subtarget}_sums.sig")
 
@@ -57,7 +57,7 @@ def build(request):
             re.MULTILINE,
         )
 
-        assert ib_search,"No ImageBuilder in checksums found"
+        assert ib_search, "No ImageBuilder in checksums found"
 
         ib_hash, ib_archive = ib_search.groups()
 
@@ -66,7 +66,7 @@ def build(request):
         tar = tarfile.open(cache / ib_archive)
         tar.extractall(path=cache)
         tar.close()
-        log.debug("Extracted TAR {ib_archive}")
+        log.debug(f"Extracted TAR {ib_archive}")
 
         (cache / ib_archive).unlink()
 
