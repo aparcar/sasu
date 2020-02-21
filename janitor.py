@@ -6,6 +6,10 @@ import json
 version = "SNAPSHOT"
 
 
+def pretty_json_dump(filename, data):
+    Path(filename).write_text(json.dumps(data, sort_keys=True, indent="  "))
+
+
 def download_package_indexes():
     base_url = "https://downloads.openwrt.org/snapshots/packages/x86_64/"
     sources = ["base", "luci", "packages", "routing", "telephony"]
@@ -20,9 +24,9 @@ def download_package_indexes():
         print(f"Found {len(source_packages)} packages")
         packages.update(re.findall(r"Package: (.+)\n", source_content))
 
-    print("Total of {len(packages)} packages found")
+    print(f"Total of {len(packages)} packages found")
 
-    Path("packages-SNAPSHOT.json").write_text(json.dumps(list(packages)))
+    pretty_json_dump(f"packages-{version}.json", sorted(list(packages)))
 
 
 def fill_metadata(dictionary, profile_info):
@@ -32,7 +36,7 @@ def fill_metadata(dictionary, profile_info):
             "target": profile_info["target"],
             "version_commit": profile_info["version_commit"],
             "version_number": profile_info["version_number"],
-            "link": "https://downloads.openwrt.org/snapshots/targets/%target/%file",
+            "url": "https://downloads.openwrt.org/snapshots/targets/%target",
             "profiles": {},
         }
     )
@@ -69,8 +73,9 @@ def merge_json_files():
                 "images": profile_info["images"],
             }
 
-    Path(f"profiles-{version}.json").write_text(json.dumps(profiles_json_overview))
-    Path(f"names-{version}.json").write_text(json.dumps(names_json_overview))
+    pretty_json_dump(f"profiles-{version}.json", profiles_json_overview)
+    pretty_json_dump(f"names-{version}.json", names_json_overview)
 
 
 merge_json_files()
+download_package_indexes()
