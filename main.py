@@ -9,7 +9,7 @@ from rq import Connection, Queue
 from os import getenv
 
 from build import build
-from common import get_hash, get_packages_hash
+from common import get_str_hash, get_packages_hash
 
 app = Flask(__name__, static_url_path="", static_folder="yafs/")
 app_settings = getenv("APP_SETTINGS", "config.DevelopmentConfig")
@@ -63,7 +63,7 @@ def get_request_hash(request_data):
         request_data["packages_hash"],
         str(request_data.get("packages_diff", 0)),
     ]
-    return get_hash(" ".join(request_array), 12)
+    return get_str_hash(" ".join(request_array), 12)
 
 
 def validate_request(request_data):
@@ -163,6 +163,12 @@ def api_build():
         response, status = validate_request(request_data)
         if not response:
             status = 202
+            request_data["store"] = (
+                Path(current_app.config["STORE_PATH"])
+                / request_data["version"]
+                / request_data["target"]
+                / request_data["profile"]
+            )
             job = get_queue().enqueue(
                 build,
                 request_data,
