@@ -17,11 +17,13 @@ app.config.from_object(app_settings)
 
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
+def get_distros():
+    return ["openwrt"]
 
 def get_versions():
     if "versions" not in g:
         g.versions = json.loads(Path("versions.json").read_text())
-        print(f"Loaded {len(g.versions)} versions")
+        app.logger.info(f"Loaded {len(g.versions)} versions")
     return g.versions
 
 
@@ -32,7 +34,7 @@ def get_profiles():
             g.profiles[version] = json.loads(
                 Path(f"profiles-{version}.json").read_text()
             )["profiles"]
-            print(f"Loaded {len(g.profiles[version])} profiles in {version}")
+            app.logger.info(f"Loaded {len(g.profiles[version])} profiles in {version}")
     return g.profiles
 
 
@@ -43,7 +45,7 @@ def get_packages():
             g.packages[version] = set(
                 json.loads(Path(f"packages-{version}.json").read_text())
             )
-            print(f"Loaded {len(g.packages[version])} packages in {version}")
+            app.logger.info(f"Loaded {len(g.packages[version])} packages in {version}")
     return g.packages
 
 
@@ -54,15 +56,22 @@ def get_queue():
     return g.queue
 
 
-
-
 def validate_request(request_data):
     for needed in ["version", "profile"]:
         if needed not in request_data:
             return ({"status": "bad_version", "message": f"Missing {needed}"}, 400)
 
+
+    if request_data.get("distro", "openwrt") not in get_distros():
+        return (
+            {
+                "status": "bad_distro",
+                "message": f"Unknown distro: {request_data['distro']}",
+            },
+            400,
+        )
+
     if request_data.get("version", "") not in get_versions():
-        print(get_versions())
         return (
             {
                 "status": "bad_version",
@@ -138,6 +147,7 @@ def api_versions():
 @app.route("/api/build", methods=["POST"])
 def api_build():
     request_data = request.get_json()
+    app.logger.debug(request_data)
     request_hash = get_request_hash(request_data)
     job = get_queue().fetch_job(request_hash)
     response = {}
