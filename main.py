@@ -9,7 +9,7 @@ from rq import Connection, Queue
 from os import getenv
 
 from build import build
-from common import get_str_hash, get_packages_hash
+from common import get_str_hash, get_packages_hash, get_request_hash
 
 app = Flask(__name__, static_url_path="", static_folder="yafs/")
 app_settings = getenv("APP_SETTINGS", "config.DevelopmentConfig")
@@ -54,16 +54,6 @@ def get_queue():
     return g.queue
 
 
-def get_request_hash(request_data):
-    request_data["packages_hash"] = get_packages_hash(request_data.get("packages", ""))
-    request_array = [
-        request_data.get("distro", ""),
-        request_data.get("version", ""),
-        request_data.get("profile", ""),
-        request_data["packages_hash"],
-        str(request_data.get("packages_diff", 0)),
-    ]
-    return get_str_hash(" ".join(request_array), 12)
 
 
 def validate_request(request_data):
@@ -99,7 +89,8 @@ def validate_request(request_data):
         request_data["target"] = target
 
     unknown_packages = (
-        set(request_data.get("packages", [])) - get_packages()[request_data["version"]]
+        set(map(lambda p: p.strip("-"), request_data.get("packages", [])))
+        - get_packages()[request_data["version"]]
     )
     if unknown_packages:
         return (
@@ -146,7 +137,6 @@ def api_versions():
 
 @app.route("/api/build", methods=["POST"])
 def api_build():
-    print(request.get_json())
     request_data = request.get_json()
     request_hash = get_request_hash(request_data)
     job = get_queue().fetch_job(request_hash)
@@ -169,6 +159,9 @@ def api_build():
                 / request_data["target"]
                 / request_data["profile"]
             )
+
+            request_data["packages"] = set(request_data["packages"])
+
             job = get_queue().enqueue(
                 build,
                 request_data,

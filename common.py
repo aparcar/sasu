@@ -23,6 +23,17 @@ def get_file_hash(path: str) -> str:
 
     return h.hexdigest()
 
+def get_request_hash(request_data):
+    request_data["packages_hash"] = get_packages_hash(request_data.get("packages", ""))
+    request_array = [
+        request_data.get("distro", ""),
+        request_data.get("version", ""),
+        request_data.get("profile", ""),
+        request_data["packages_hash"],
+        str(request_data.get("packages_diff", 0)),
+    ]
+    return get_str_hash(" ".join(request_array), 12)
+
 
 def get_packages_hash(packages: list) -> str:
     return get_str_hash(" ".join(sorted(list(set(packages)))), 12)
