@@ -22,6 +22,7 @@ base_url = "https://cdn.openwrt.org/snapshots/targets/{target}/{filename}"
 def build(request):
     log.debug(f"Building {request}")
     cache = (Path("cache") / request["version"] / request["target"]).parent
+    bin_dir = Path(request["version"]) / request["target"] / request["profile"]
     target, subtarget = request["target"].split("/")
     root = Path().cwd()
     log.debug(f"Current Working Dir {root}")
@@ -29,6 +30,7 @@ def build(request):
     sig_file = Path(cache / f"{subtarget}_sums.sig")
 
     def setup_ib():
+        return
         log.debug("Setting up ImageBuilder")
         if (cache / subtarget).is_dir():
             rmtree(cache / subtarget)
@@ -74,8 +76,8 @@ def build(request):
     if not (cache).is_dir():
         cache.mkdir(parents=True, exist_ok=True)
 
-    if not (root / request["store"]).is_dir():
-        (root / request["store"]).mkdir(parents=True, exist_ok=True)
+    if not (root / request["store"] / bin_dir).is_dir():
+        (root / request["store"] / bin_dir).mkdir(parents=True, exist_ok=True)
 
     if sig_file.is_file():
         last_modified = time.mktime(
@@ -90,7 +92,9 @@ def build(request):
                 "%a, %d %b %Y %H:%M:%S %Z",
             )
         )
-        log.debug("Local  %s", datetime.datetime.fromtimestamp(sig_file.stat().st_mtime))
+        log.debug(
+            "Local  %s", datetime.datetime.fromtimestamp(sig_file.stat().st_mtime)
+        )
         log.debug("Remote %s", datetime.datetime.fromtimestamp(last_modified))
 
         if sig_file.stat().st_mtime < last_modified:
@@ -120,8 +124,8 @@ def build(request):
     packages_hash = get_packages_hash(manifest_packages)
     log.debug(f"Packages Hash {packages_hash}")
 
-    if not (request["store"] / packages_hash).is_dir():
-        (request["store"] / packages_hash).mkdir(parents=True, exist_ok=True)
+    if not (request["store"] / bin_dir / packages_hash).is_dir():
+        (request["store"] / bin_dir / packages_hash).mkdir(parents=True, exist_ok=True)
 
     image_build = subprocess.run(
         [
@@ -130,21 +134,25 @@ def build(request):
             f"PROFILE={request['profile']}",
             f"PACKAGES={' '.join(request['packages'])}",
             f"EXTRA_IMAGE_NAME={packages_hash}",
-            f"BIN_DIR={root / request['store'] / packages_hash}",
+            f"BIN_DIR={root / request['store'] / bin_dir / packages_hash}",
         ],
         text=True,
         capture_output=True,
         cwd=cache / subtarget,
     )
 
-    Path(root / request["store"] / packages_hash / "manifest.json").write_text(
-        json.dumps(manifest, sort_keys=True, indent="  ")
-    )
+    Path(
+        root / request["store"] / bin_dir / packages_hash / "manifest.json"
+    ).write_text(json.dumps(manifest, sort_keys=True, indent="  "))
 
-    Path(root / request["store"] / packages_hash / "buildlog.txt").write_text(
+    Path(root / request["store"] / bin_dir / packages_hash / "buildlog.txt").write_text(
         f"### STDOUT\n\n{image_build.stdout}\n\n### STDERR\n\n{image_build.stderr}"
     )
 
     assert not image_build.returncode, "ImageBuilder failed"
 
-    return next(Path(request["store"] / packages_hash).glob("openwrt-*.json"))
+    json_file = next((request["store"] / bin_dir / packages_hash).glob("openwrt-*.json"))
+
+    assert json_file, "No JSON file created after image build"
+
+    return bin_dir / packages_hash / json_file.name

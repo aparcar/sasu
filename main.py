@@ -17,8 +17,10 @@ app.config.from_object(app_settings)
 
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
+
 def get_distros():
     return ["openwrt"]
+
 
 def get_versions():
     if "versions" not in g:
@@ -60,7 +62,6 @@ def validate_request(request_data):
     for needed in ["version", "profile"]:
         if needed not in request_data:
             return ({"status": "bad_version", "message": f"Missing {needed}"}, 400)
-
 
     if request_data.get("distro", "openwrt") not in get_distros():
         return (
@@ -163,13 +164,7 @@ def api_build():
         response, status = validate_request(request_data)
         if not response:
             status = 202
-            request_data["store"] = (
-                Path(current_app.config["STORE_PATH"])
-                / request_data["version"]
-                / request_data["target"]
-                / request_data["profile"]
-            )
-
+            request_data["store"] = Path(current_app.config["STORE_PATH"])
             request_data["packages"] = set(request_data["packages"])
 
             job = get_queue().enqueue(
@@ -194,7 +189,7 @@ def api_build():
                 current_app.config["STORE_URL"] + "/" + str(job.result.parent)
             )
             response["build_at"] = job.ended_at
-            response.update(json.loads(job.result.read_text()))
+            response.update(json.loads((Path(current_app.config["STORE_PATH"]) / job.result).read_text()))
 
         response["enqueued_at"] = job.enqueued_at
 
